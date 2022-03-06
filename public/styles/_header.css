@@ -1,0 +1,19 @@
+header nav ul {
+  padding-left: 40px;
+  width: 95%;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px 40px 11px 0;
+  border-bottom: 3px solid #584b4b;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+header nav ul li:hover {
+  border-bottom: 5px solid #584b4b;
+}
