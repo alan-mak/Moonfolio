@@ -3,11 +3,12 @@ $border-colour: #584b4b;
 header {
   nav {
     ul {
-      padding-left: 40px;
-      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
       height: 10vh;
       margin: 0 auto;
-
+      
       li {
         list-style-type: none;
         display: inline-block;
@@ -15,6 +16,12 @@ header {
         border-bottom: 3px solid $border-colour;
         margin: 0 10px;
         font-weight: 500;
+        a {
+          color: #756464;
+        }
+      }
+      #home {
+        border-bottom: none;
       }
       li:hover {
         border-bottom: 5px solid $border-colour;
