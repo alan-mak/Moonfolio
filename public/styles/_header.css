@@ -1,6 +1,7 @@
 header nav ul {
-  padding-left: 40px;
-  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
   height: 10vh;
   margin: 0 auto;
 }
@@ -12,6 +13,14 @@ header nav ul li {
   border-bottom: 3px solid #584b4b;
   margin: 0 10px;
   font-weight: 500;
+}
+
+header nav ul li a {
+  color: #756464;
+}
+
+header nav ul #home {
+  border-bottom: none;
 }
 
 header nav ul li:hover {
