@@ -25,6 +25,9 @@ app.get('/', (req, res) => {
   res.render('index', dataObj);
 });
 
+app.get('*', (req, res) => {
+  res.status(404).render('404', dataObj);
+});
 
 app.listen(port, () => {
   console.log("Listening on: http://localhost:" + port);
