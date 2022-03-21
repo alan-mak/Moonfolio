@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap");
+html {
+  overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background-color: #eee6e6;
+}
+
+body main div {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body main div #title {
+  margin-left: 10%;
+  margin-bottom: 0;
+  width: 40%;
+}
+
+body main div #rectangle {
+  background: rgba(252, 247, 200, 0.56);
+  border-radius: 75px;
+  width: 40%;
+  height: 32px;
+  margin-left: 10%;
+  margin-top: -1.5rem;
+  z-index: -1;
+}
+
+body main h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #756464;
+  font-size: 3rem;
+}
+
+body main #works-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body main #works-container div {
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body main #works-container div .project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+body main #works-container div .project-container h1 {
+  color: #977C7C;
+  font-family: "Inconsolata", monospace;
+  font-size: 5rem;
+  margin-left: -3rem;
+}
+
+body main #works-container div .project-container h3 a {
+  color: #616161;
+  font-family: "Montserrat", sans-serif;
+}
+
+body main #works-container div .project-container #project1 {
+  background: url("/image/project1.jpg");
+  background-size: 566px 487px;
+  background-position: center;
+}
+
+body main #works-container div .project-container #project2 {
+  background: url("/image/project2.jpg");
+  background-size: 566px 487px;
+  background-position: center;
+}
+
+body main #works-container div .project-container #project3 {
+  background: url("/image/project3.jpg");
+  background-size: 566px 487px;
+  background-position: center;
+}
+
+body main #works-container div .project-container #project4 {
+  background: url("/image/project4.jpg");
+  background-size: 566px 487px;
+  background-position: center;
+}
+
+body main #works-container div .project-container .project {
+  width: 566px;
+  height: 487px;
+  border: 12px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 6px #cabcbc;
+}

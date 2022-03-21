@@ -1,0 +1,113 @@
+@import "constants.scss";
+
+html {
+  overflow: scroll;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background-color: $background;
+
+  main {
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+      #title {
+        margin-left: $worktitlemargin;
+        margin-bottom: 0;
+        width: $worktitlewidth;
+      }
+      
+      #rectangle {
+        background: rgba(252, 247, 200, 0.56);
+        border-radius: 75px;
+        width: $worktitlewidth;
+        height: 32px;
+        margin-left: $worktitlemargin;
+        margin-top: -1.5rem;
+        z-index: -1;
+      }
+    }
+
+    h1 {
+      font-family: $font1;
+      color: $colour2;
+      font-size: 3rem;
+    }
+
+    #works-container {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        gap: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .project-container {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          h1 {
+            color: $colour3;
+            font-family: $font2;
+            font-size: 5rem;
+            margin-left: -3rem;
+          }
+
+          h3 {
+            a {
+              color: $colour4;
+              // text-decoration: none;
+              font-family: $font1;
+            }
+          }
+
+          #project1 {
+            background: url("/image/project1.jpg");
+            background-size: $workimagewidth $workimageheight;
+            background-position: center;
+          }
+
+          #project2 {
+            background: url("/image/project2.jpg");
+            background-size: $workimagewidth $workimageheight;
+            background-position: center;
+          }
+
+          #project3 {
+            background: url("/image/project3.jpg");
+            background-size: $workimagewidth $workimageheight;
+            background-position: center;
+          }
+
+          #project4 {
+            background: url("/image/project4.jpg");
+            background-size: $workimagewidth $workimageheight;
+            background-position: center;
+          }
+
+          .project {
+            width: $workimagewidth;
+            height: $workimageheight;
+            border: 12px solid rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 5px 10px 6px #cabcbc;
+          }
+        }
+      }
+    }
+  }
+}
