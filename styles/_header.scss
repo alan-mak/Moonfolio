@@ -1,4 +1,4 @@
-$border-colour: #584b4b;
+@import "constants.scss";
 
 header {
   nav {
@@ -8,23 +8,26 @@ header {
       width: 90%;
       height: 10vh;
       margin: 0 auto;
+      background-color: $background;
       
       li {
         list-style-type: none;
         display: inline-block;
         padding: 20px 40px 11px 0;
-        border-bottom: 3px solid $border-colour;
+        border-bottom: 3px solid $colour1;
         margin: 0 10px;
         font-weight: 500;
+        font-family: $font1;
         a {
-          color: #756464;
+          color: $colour2;
+          text-decoration: none;
         }
       }
       #home {
         border-bottom: none;
       }
       li:hover {
-        border-bottom: 5px solid $border-colour;
+        border-bottom: 5px solid $colour1;
       }
     }
   }

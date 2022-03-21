@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap');
-/*
-font-family: 'Inconsolata', monospace;
-font-family: 'Montserrat', sans-serif;
-*/
-
-$highlight-top: 100px;
-$highlight-font: 44px;
+@import "constants.scss";
 
 html{
     box-sizing: border-box;
+    overflow: scroll;
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body{
     margin: 0;
     padding:0;
     color: #756464;
-    background-color: #eee6e6;
-    font-family: 'Montserrat', sans-serif;
+    background-color: $background;
+    font-family: $font1;
     font-weight: 400;
     main {
-        width: 90%;
+        width: 84%;
         margin: 0 auto;
     }
 }
@@ -27,10 +29,6 @@ body{
 img {
     max-width: 100%;
     height:auto;
-}
-
-a {
-    text-decoration: none;
 }
 
 .flex-container{
@@ -45,13 +43,13 @@ a {
     justify-content: end;
     width: 105%;
     gap: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
 }
 
 #highlights-title {
     height: auto;
     margin-top:  -($highlight-top + $highlight-font);
-    margin-left: -80px;
+    margin-left: -11%;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
     font-size: $highlight-font;
     color: #76787e;
@@ -104,7 +102,7 @@ a {
         padding:0;
         margin:0;
         padding: 0 70px;
-        font-family: 'Inconsolata', monospace;
+        font-family: $font2;
         font-weight: 400;
     }
     
@@ -121,15 +119,23 @@ a {
         line-height: 28px;
     }
 
-    .button {
+    a {
+        padding: 9px 15px;
+        font-size: 16px;
+        color: #756464;
+        border: 1px solid #756464;
+        border-radius: 10px;
+        width: fit-content;
         float: right;
         margin-right: 50px;
+        text-decoration: none;
     }
 
-    a:hover{
+    p:hover {
         color:black;
         border: 1px solid black;
     }
+
 }
 
 
@@ -154,15 +160,6 @@ a {
 .highlights-row-text p{
     width:80%;
     margin-bottom: 30px;
-}
-
-.button {
-    padding: 9px 15px;
-    font-size: 16px;
-    color: #756464;
-    border: 1px solid #756464;
-    border-radius: 10px;
-    width: fit-content;
 }
 
 @media only screen and (max-width: 768px) {
