@@ -17,6 +17,10 @@ app.use("/styles", sass({
 }));
 app.use(express.static('public'));
 
+app.get('/works/boozy', (req, res) => {
+  res.render('boozy', dataObj);
+});
+
 app.get('/works', (req, res) => {
   res.render('works', dataObj);
 });

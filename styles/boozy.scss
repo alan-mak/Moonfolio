@@ -1,0 +1,73 @@
+@import "constants.scss";
+
+html {
+  overflow: scroll;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: $background;
+  width: 84%;
+  margin: 0 auto;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #boozyimage {
+      background: url("/image/project1.jpg");
+      background-size: $boozyimagewidth $boozyimageheight;
+      background-position: center;
+      width: $boozyimagewidth;
+      height: $boozyimageheight;
+      border: 12px solid rgba(255, 255, 255, 0.5);
+      box-sizing: border-box;
+      box-shadow: 0px 5px 10px 6px #cabcbc; 
+    }
+
+    div {
+      width: 82%;
+      h1 {
+        font-family: $font3;
+        font-weight: 700;
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        section {
+          width: 45%;
+
+          .detailTitle {
+            text-transform: uppercase;
+            margin-top: 1rem;
+            font-size: 1rem;
+          }
+          h1 {
+            color: $colour3;
+            font-family: $font4;
+          }
+          p {
+            font-family: $font3;
+          }
+          h3 {
+            font-family: $font5;
+            color: $colour4;
+            font-weight: 400;
+            font-size: 0.8rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
