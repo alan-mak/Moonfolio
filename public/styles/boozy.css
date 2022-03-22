@@ -17,8 +17,8 @@ html::-webkit-scrollbar {
 
 body {
   background-color: #eee6e6;
-  width: 84%;
   margin: 0 auto;
+  width: 84%;
 }
 
 body main {
