@@ -14,10 +14,10 @@ html::-webkit-scrollbar {
 
 body {
   background-color: $background;
-  width: 84%;
-  margin: 0 auto;
-
+  
   main {
+    width: 84%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
