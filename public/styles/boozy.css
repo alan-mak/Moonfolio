@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
 html {
   overflow: scroll;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -17,11 +18,11 @@ html::-webkit-scrollbar {
 
 body {
   background-color: #eee6e6;
-  margin: 0 auto;
-  width: 84%;
 }
 
 body main {
+  width: 84%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,4 +80,64 @@ body main div div section h3 {
   font-weight: 400;
   font-size: 0.8rem;
   margin: 0;
+}
+
+body main #image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FDF8F8;
+  margin: 0 auto;
+}
+
+body main #image-gallery h1 {
+  font-family: "Voltaire", normal;
+}
+
+body main #image-gallery h3 {
+  width: 88%;
+  align-items: flex-start;
+  font-family: "Signika Negative", normal;
+  color: #616161;
+  font-weight: 400;
+}
+
+body main #image-gallery div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body main #image-gallery div div img {
+  margin: 3vh 0;
+  max-width: 75%;
+  max-height: 50%;
+}
+
+body main #design h1 {
+  font-family: "Voltaire", normal;
+  text-align: center;
+}
+
+body main #design h3 {
+  font-family: "Signika Negative", normal;
+  color: #616161;
+}
+
+body main #design div {
+  font-family: "Sanchez", normal;
+  justify-content: space-between;
+}
+
+body main #design div ul {
+  margin-top: 0;
+}
+
+body main #design div ul h4 {
+  margin-bottom: 0;
+}
+
+body main #design div img {
+  max-width: 60%;
+  margin-top: 3vh;
 }

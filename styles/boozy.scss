@@ -69,5 +69,58 @@ body {
         }
       }
     }
+    #image-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $colour5;
+      margin: 0 auto;
+      h1{
+        font-family: $font6;
+      }
+      h3 {
+        width: 88%;
+        align-items: flex-start;
+        font-family: $font5;
+        color: $colour4;
+        font-weight: 400;
+      }
+      div {
+        div {
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+          margin: 3vh 0;
+          max-width: 75%;
+          max-height: 50%;
+          }
+        }
+      }
+    }
+    #design {
+      h1 {
+        font-family: $font6;
+        text-align: center;
+      }
+      h3 {
+        font-family: $font5;
+        color: $colour4;
+      }
+      div {
+        font-family: $font3;
+        justify-content: space-between;
+        ul {
+          margin-top: 0;
+          h4 {
+            margin-bottom: 0;
+          }
+        }
+        img {
+          max-width: 60%;
+          margin-top: 3vh;
+        }
+      }
+    }
   }
 }
