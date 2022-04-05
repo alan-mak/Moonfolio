@@ -112,6 +112,7 @@ body main #image-gallery div div img {
   margin: 3vh 0;
   max-width: 75%;
   max-height: 50%;
+  filter: drop-shadow(0px 4px 20px #977C7C);
 }
 
 body main #design h1 {
@@ -140,4 +141,36 @@ body main #design div ul h4 {
 body main #design div img {
   max-width: 60%;
   margin-top: 3vh;
+}
+
+body main #design .card img {
+  max-width: 60%;
+  filter: drop-shadow(0px 4px 20px #977C7C);
+}
+
+body main #design .card .line {
+  border: 2px solid #977C7C;
+  height: 0;
+  z-index: -1;
+  background-color: #977C7C;
+  margin-top: 15.5%;
+}
+
+body main #design .card #line1 {
+  margin-left: -10%;
+}
+
+body main #design .card #card2 {
+  margin-top: -25%;
+}
+
+body main #design .card #line2 {
+  margin-right: -10%;
+}
+
+body main #design .card h3 {
+  margin-top: 10%;
+  font-family: "Sanchez", normal;
+  font-weight: 400;
+  font-size: 2rem;
 }
