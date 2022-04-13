@@ -37,6 +37,7 @@ body {
       h1 {
         font-family: $font3;
         font-weight: 700;
+        font-size: $h1size;
       }
       div {
         display: flex;
@@ -52,18 +53,19 @@ body {
             margin-top: 1rem;
             font-size: 1rem;
           }
-          h1 {
+          h2 {
             color: $colour3;
             font-family: $font4;
+            font-size: $h2size;
           }
           p {
             font-family: $font3;
           }
-          h3 {
+          h6 {
             font-family: $font5;
             color: $colour4;
             font-weight: 400;
-            font-size: 0.8rem;
+            font-size: $h6size;
             margin: 0;
           }
         }
@@ -75,7 +77,8 @@ body {
       align-items: center;
       background: $colour5;
       margin: 0 auto;
-      h1{
+      h2{
+        font-size: $h2size;
         font-family: $font6;
       }
       h3 {
@@ -84,6 +87,7 @@ body {
         font-family: $font5;
         color: $colour4;
         font-weight: 400;
+        font-size: $h3size;
       }
       div {
         div {
@@ -94,19 +98,21 @@ body {
           margin: 3vh 0;
           max-width: 75%;
           max-height: 50%;
-          filter: drop-shadow(0px 4px 20px #977C7C);
+          filter: drop-shadow(0px 4px 15px $colour3);
           }
         }
       }
     }
     #design {
-      h1 {
+      h2 {
         font-family: $font6;
         text-align: center;
+        font-size: $h2size;
       }
       h3 {
         font-family: $font5;
         color: $colour4;
+        font-size: $h3size;
       }
       div {
         font-family: $font3;
@@ -115,6 +121,7 @@ body {
           margin-top: 0;
           h4 {
             margin-bottom: 0;
+            font-size: $h4size;
           }
         }
         img {
@@ -125,10 +132,10 @@ body {
       .card {
         img {
           max-width: 60%;
-          filter: drop-shadow(0px 4px 20px #977C7C);
+          filter: drop-shadow(0px 4px 15px $colour3);
         }
         .line {
-          border: 2px solid $colour3;
+          border: $lineborder;
           height: 0;
           z-index: -1;
           background-color: $colour3;
@@ -147,7 +154,40 @@ body {
           margin-top: 10%;
           font-family: $font3;
           font-weight: 400;
-          font-size: 2rem;
+          font-size: $h3size;
+        }
+      }
+      #define {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-family: $font4;
+          color: $colour3;
+          font-weight: 700;
+          font-size: $h3size;
+        }
+        img {
+          align-self: center;
+          max-width: 90%;
+        }
+        div {
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-end;
+          margin-top: 0.2%;
+          #line3 {
+            border-left: $lineborder;
+            border-bottom: $lineborder;
+            height: 10vh;
+            width: 5vw;
+          }
+          h4 {
+            margin: 0;
+            font-weight: 400;
+            font-size: $h4size;
+            margin-bottom: -($h4size/2);
+            color: $colour2;
+          }
         }
       }
     }
