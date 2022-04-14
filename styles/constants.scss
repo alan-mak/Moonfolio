@@ -8,6 +8,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
 
+@font-face {
+  font-family: 'Sanasation';
+  src: url('/fonts/SansationRegular.eot'),
+        url('/fonts/SansationRegular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/SansationRegular.woff') format('woff'),
+        url('/fonts/Sansation_Regular.ttf') format('truetype'),
+        url('/fonts/SansationRegular.svg') format('svg');
+};
 
 $font1: 'Montserrat', sans-serif;
 $font2: 'Inconsolata', monospace;
@@ -15,8 +23,11 @@ $font3: 'Sanchez', normal;
 $font4: 'Sunflower', normal;
 $font5: 'Signika Negative', normal;
 $font6: 'Voltaire', normal;
+$font7: 'Sanasation', normal;
 
-$background: #eee6e6;
+$background: #FFFFFF;
+$background1: #EEE6E6;
+$background2: #E5E5E5;
 $colour1: #584b4b;
 $colour2: #756464;
 $colour3: #977C7C;
@@ -38,7 +49,10 @@ $workimageheight: 487px;
 $worktitlemargin: 10%;
 $worktitlewidth: 40%;
 
-$boozyimagewidth: 1367px;
+$boozyimagewidth: 84%;
 $boozyimageheight: 572px;
 
+$linemarginvalue: 2%;
 $lineborder: 2px solid $colour3;
+$linemargin: 0 ($linemarginvalue) 0 (-$linemarginvalue);
+$linewidth: (50% - $linemarginvalue);

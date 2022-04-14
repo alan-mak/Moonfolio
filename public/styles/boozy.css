@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
+@font-face {
+  font-family: 'Sanasation';
+  src: url("/fonts/SansationRegular.eot"), url("/fonts/SansationRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SansationRegular.woff") format("woff"), url("/fonts/Sansation_Regular.ttf") format("truetype"), url("/fonts/SansationRegular.svg") format("svg");
+}
+
 html {
   overflow: scroll;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -17,66 +22,112 @@ html::-webkit-scrollbar {
 }
 
 body {
-  background-color: #eee6e6;
+  background-color: #FFFFFF;
 }
 
 body main {
-  width: 84%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-body main #boozyimage {
-  background: url("/image/project1.jpg");
-  background-size: 1367px 572px;
-  background-position: center;
-  width: 1367px;
-  height: 572px;
-  border: 12px solid rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 5px 10px 6px #cabcbc;
-}
-
-body main div {
-  width: 82%;
-}
-
-body main div h1 {
-  font-family: "Sanchez", normal;
-  font-weight: 700;
-  font-size: 2.2rem;
-}
-
-body main div div {
+body main .title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+  width: 100%;
+  margin: 0;
+}
+
+body main .line {
+  border: 2px solid #977C7C;
+  height: 0;
+  background-color: #977C7C;
+  align-self: center;
+  margin: 0 2% 0 -2%;
+  width: 48%;
+}
+
+body main #project1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body main #project1 img {
+  max-width: 35%;
+}
+
+body main #project1 div {
+  flex-direction: column;
+  width: auto;
+  text-transform: uppercase;
+}
+
+body main #project1 div h1 {
+  margin-bottom: 0;
+  font-family: "Sanasation", normal;
+  font-size: 2.2rem;
+  color: #B623FE;
+  font-weight: 700;
+}
+
+body main #project1 div h2 {
+  margin-top: 0;
+  font-family: "Sanasation", normal;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+body main #boozyimage {
+  width: 84%;
+  border-radius: 25px;
+}
+
+body main #info {
   width: 100%;
 }
 
-body main div div section {
+body main #info h1 {
+  font-family: "Voltaire", normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+body main #info div {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+body main #info div section {
   width: 45%;
 }
 
-body main div div section .detailTitle {
+body main #info div section .detailTitle {
   text-transform: uppercase;
   margin-top: 1rem;
   font-size: 1rem;
 }
 
-body main div div section h2 {
+body main #info div section h2 {
   color: #977C7C;
   font-family: "Sunflower", normal;
   font-size: 2.05rem;
 }
 
-body main div div section p {
+body main #info div section p {
   font-family: "Sanchez", normal;
 }
 
-body main div div section h6 {
+body main #info div section p span {
+  color: #977C7C;
+  font-style: italic;
+}
+
+body main #info div section h6 {
   font-family: "Signika Negative", normal;
   color: #616161;
   font-weight: 400;
@@ -85,31 +136,44 @@ body main div div section h6 {
 }
 
 body main #image-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #FDF8F8;
   margin: 0 auto;
 }
 
-body main #image-gallery h2 {
-  font-size: 2.05rem;
+body main #image-gallery h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
   font-family: "Voltaire", normal;
 }
 
 body main #image-gallery h3 {
-  width: 88%;
+  width: 30%;
   align-items: flex-start;
   font-family: "Signika Negative", normal;
   color: #616161;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 2rem;
+  background-color: #E5E5E5;
+  border: 15px solid #E5E5E5;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: -1%;
+  margin-top: 0%;
+  margin-right: 75%;
+  padding-right: 5%;
+  text-align: end;
+}
+
+body main #image-gallery div {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
 
 body main #image-gallery div div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 body main #image-gallery div div img {
@@ -153,14 +217,6 @@ body main #design div img {
 body main #design .card img {
   max-width: 60%;
   filter: drop-shadow(0px 4px 15px #977C7C);
-}
-
-body main #design .card .line {
-  border: 2px solid #977C7C;
-  height: 0;
-  z-index: -1;
-  background-color: #977C7C;
-  margin-top: 15.5%;
 }
 
 body main #design .card #line1 {
