@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Sunny Chung and Alan Mak">
-  <title>Moon Chung</title>
+  <title>Boozy Melts</title>
   <link rel="stylesheet" type="text/css" href="/styles/_header.css">
   <link rel="stylesheet" type="text/css" href="/styles/_footer.css">
   <link rel="stylesheet" type="text/css" href="/styles/boozy.css">
@@ -14,32 +14,101 @@
 <body>
   <%- include('partials/_header.ejs') %>
     <main>
-      <img src="#" alt="LOGO">
-      <div id="boozyimage"></div>
-      <div>
-        <h1>Boozy Melts</h1>
-        <h3><a src="#">[URL Placeholder]</a></h3>
+      <div id="project1">
+        <img src="/image/BM_logo.png" alt="LOGO">
         <div>
+          <h1>Boozy Melts</h1>
+          <h2>Brand New Website Design</h2>
+        </div>
+      </div>
+      <img src="/image/project1.jpg" alt="Boozy Home Page" id="boozyimage">
+      <!-- <div id="boozyimage"></div> -->
+      <div id="info">
+        <div class="title" style="margin: 0; width: 100%; justify-content: start;">
+          <div class="line" style="margin: 0 2% 0 -2%; width: 48%;"></div>
+          <h1>Info</h1>
+        </div>
+        <div >
           <section>
-            <h1>Overview</h1>
+            <h2>Overview</h2>
             <p>Boozy Melts is a local ice-cream store based in Etobicoke that serves alcoholic and non-alcoholic
               ice-creams.</p>
-            <h1>Problem Statement</h1>
-            <p>Women between 25-45 who are active on social media sometimes have the problem of finding unique places to
-              hang out outside of the usual patio restaurants and bars especially those that are environmentally
-              cautious and supportive of small businesses.</p>
+            <h2>Problem Statement</h2>
+            <p>Boozy Melts currently does not have a website which causes users to have trouble looking for the menu, information about this restaurant and making purchases. <span>How might we design a website that helps users easily place an order and make it a delightful experience while using it.</span></p>
+
+
           </section>
           <section style="width: 25%;">
-            <h1>Details</h1>
-            <h3 class="detailTitle">My Role</h3>
-            <h3>Research, Analysis, UX Design, User-Testing</h3>
-            <h3 class="detailTitle">The Team</h3>
-            <h3>2 UX Designers</h3>            
-            <h3 class="detailTitle">Duration</h3>
-            <h3>7 Weeks, October - December 2021</h3>
-            <h3 class="detailTitle">Project Type</h3>
-            <h3>School Project</h3>
+            <h2>Details</h2>
+            <h6 class="detailTitle">My Role</h6>
+            <h6>Research, Analysis, UX/UI Designer, User-Testing Facilitator</h6>
+            <h6 class="detailTitle">The Team</h6>
+            <h6>2 UX Designers</h6>
+            <h6 class="detailTitle">Duration</h6>
+            <h6>7 Weeks, October - December 2021</h6>
+            <h6 class="detailTitle">Project Type</h6>
+            <h6>School Project</h6>
           </section>
+        </div>
+      </div>
+      <div id="image-gallery">
+        <div class="title" >
+          <div class="line" style="margin: 0 2% 0 -2%; width: 48%;"></div>
+          <h1>Solution</h1>
+        </div>
+        <h3 class="title-highlight">Prototype</h3>
+        <div>
+          <div>
+            <img src="/image/Prototype/prototype_home.png" alt="home page">
+            <img src="/image/Prototype/prototype_about.png" alt="About">
+            <img src="/image/Prototype/prototype_faq.png" alt="FAQ">
+          </div>
+          <div>
+            <img src="/image/Prototype/prototype_flavour.png" alt="Flavour">
+            <img src="/image/Prototype/prototype_cart.png" alt="Cart">
+            <img src="/image/Prototype/prototype_ride.png" alt="Ride">
+            <img src="/image/Prototype/prototype_time.png" alt="Time">
+          </div>
+        </div>
+      </div>
+      <div id="design">
+        <h2>Design Process</h2>
+        <h3>Research User Interview</h3>
+        <div>
+          <ul>
+            <h4>User Goal</h4>
+            <li>Order online</li>
+            <li>Check what the restuarant offers and the ingredients of the ice cream</li>
+            <li>Read comments and feedback from the previous customers</li>
+            <li>Have a place to sit and hang out with friends</li>
+            <li>Take photos at an aestheic place and post on socal media</li>
+          </ul>
+          <ul>
+            <h4>Business Goals</h4>
+            <li>Attract more customers</li>
+            <li>Increase revenue</li>
+            <li>Provide taxi service (to increase more loyal customers)</li>
+            <li>Provide a luxury service and experience</li>
+            <li>Foster relationships and experience</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="/image/Design_process/design_card.jpeg" alt="Group Card Sorting">
+          <div class="line" id="line1"></div>
+          <h3>Group Card Sorting</h3>
+        </div>
+        <div class="card">
+          <h3>Participants Card Sorting</h3>
+          <div class="line" id="line2"></div>
+          <img src="/image/Design_process/design_sorted.jpeg" alt="Participants Card Sorting" id="card2">
+        </div>
+        <div id="define">
+          <h3>Define</h3>
+          <img src="/image/Design_process/design_user.png" alt="User">
+          <div>
+            <div id="line3"></div>
+            <h4>User Persona</h4>
+          </div>
         </div>
       </div>
     </main>
