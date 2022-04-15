@@ -69,11 +69,13 @@ img {
     outline-style: none;
     object-fit: fill;
     text-align: center;
+    z-index: 2;
 }
 
 #portfolio-picture {
     border-radius: 200px 200px 0 0;
-    box-shadow: 14px 1px 17px 2px #b6a9a9; 
+    box-shadow: 14px 1px 17px 2px #b6a9a9;
+    z-index: 1;
 }
 
 #home-intro-text {
@@ -95,7 +97,6 @@ img {
     padding: $highlight-top 30px 30px 30px;
     position: relative;
     margin-top: -100px;
-    z-index: -1;
 
     h2{
         font-size: 100px;
@@ -130,12 +131,6 @@ img {
         margin-right: 50px;
         text-decoration: none;
     }
-
-    p:hover {
-        color:black;
-        border: 1px solid black;
-    }
-
 }
 
 
