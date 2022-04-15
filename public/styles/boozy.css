@@ -48,6 +48,24 @@ body main .line {
   width: 48%;
 }
 
+body main .title-highlight {
+  width: 30%;
+  align-items: flex-start;
+  font-family: "Signika Negative", normal;
+  color: #616161;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: #E5E5E5;
+  border: 15px solid #E5E5E5;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: -1%;
+  margin-top: 0%;
+  margin-right: 75%;
+  padding-right: 5%;
+  text-align: end;
+}
+
 body main #project1 {
   display: flex;
   align-items: center;
@@ -68,7 +86,7 @@ body main #project1 div h1 {
   margin-bottom: 0;
   font-family: "Sanasation", normal;
   font-size: 2.2rem;
-  color: #B623FE;
+  color: #b623fe;
   font-weight: 700;
 }
 
@@ -145,24 +163,6 @@ body main #image-gallery h1 {
   font-family: "Voltaire", normal;
 }
 
-body main #image-gallery h3 {
-  width: 30%;
-  align-items: flex-start;
-  font-family: "Signika Negative", normal;
-  color: #616161;
-  font-weight: 700;
-  font-size: 2rem;
-  background-color: #E5E5E5;
-  border: 15px solid #E5E5E5;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-left: -1%;
-  margin-top: 0%;
-  margin-right: 75%;
-  padding-right: 5%;
-  text-align: end;
-}
-
 body main #image-gallery div {
   display: flex;
   width: 100%;
@@ -183,10 +183,11 @@ body main #image-gallery div div img {
   filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
-body main #design h2 {
+body main #design h1 {
   font-family: "Voltaire", normal;
   text-align: center;
-  font-size: 2.05rem;
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 
 body main #design h3 {
@@ -195,23 +196,41 @@ body main #design h3 {
   font-size: 2rem;
 }
 
-body main #design div {
+body main #design section {
+  width: 53%;
   font-family: "Sanchez", normal;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
 }
 
-body main #design div ul {
-  margin-top: 0;
+body main #design section h3 {
+  margin: 0.5rem 0;
 }
 
-body main #design div ul h4 {
-  margin-bottom: 0;
+body main #design section div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+body main #design section div section h4 {
+  margin: 0.5rem 0;
   font-size: 1.5rem;
 }
 
-body main #design div img {
+body main #design section div section ul {
+  margin-top: 0;
+}
+
+body main #design img {
   max-width: 60%;
   margin-top: 3vh;
+}
+
+body main #design .card {
+  margin-bottom: 5rem;
 }
 
 body main #design .card img {
@@ -232,47 +251,41 @@ body main #design .card #line2 {
 }
 
 body main #design .card h3 {
-  margin-top: 10%;
   font-family: "Sanchez", normal;
   font-weight: 400;
   font-size: 2rem;
 }
 
-body main #design #define {
+body main #design .card #card-caption {
+  align-self: end;
+}
+
+body main #define {
   display: flex;
   flex-direction: column;
 }
 
-body main #design #define h3 {
+body main #define h3 {
   font-family: "Sunflower", normal;
-  color: #977C7C;
+  color: #616161;
   font-weight: 700;
   font-size: 2rem;
 }
 
-body main #design #define img {
+body main #define section {
+  width: 84%;
+  margin: 0 auto;
+}
+
+body main #define section h4 {
+  font-size: 1.5rem;
+  font-family: "Sunflower", normal;
+  font-weight: 500;
+  color: #977C7C;
+}
+
+body main #define section img {
   align-self: center;
   max-width: 90%;
-}
-
-body main #design #define div {
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 0.2%;
-}
-
-body main #design #define div #line3 {
-  border-left: 2px solid #977C7C;
-  border-bottom: 2px solid #977C7C;
-  height: 10vh;
-  width: 5vw;
-}
-
-body main #design #define div h4 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: -0.75rem;
-  color: #756464;
+  filter: drop-shadow(0px 4px 15px #977C7C);
 }
