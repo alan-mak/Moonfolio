@@ -17,7 +17,7 @@ app.use("/styles", sass({
 }));
 app.use(express.static('public'));
 
-app.get('/works/boozy', (req, res) => {
+app.get('/boozy', (req, res) => {
   res.render('boozy', dataObj);
 });
 
