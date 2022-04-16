@@ -21,6 +21,25 @@ body {
     flex-direction: column;
     align-items: center;
 
+    .button-container {
+      display: flex;
+      justify-content: center;
+      .button {
+        box-sizing: border-box;
+        border: 1px solid $colourbutton;
+        color: $colourbuttonfont;
+        border-radius: 75px;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+        text-decoration: none;
+        font-size: $h4size;
+        padding: 1rem;
+      }
+    }
+
+    a::visited {
+      text-decoration: none;
+    }
+
     .title {
       display: flex;
       justify-content: start;
@@ -229,7 +248,7 @@ body {
       }
     }
     #define {
-      // margin-top: 5rem;
+      margin-bottom: 5rem;
       display: flex;
       flex-direction: column;
       // width: 84%;
@@ -247,11 +266,52 @@ body {
           font-family: $font4;
           font-weight: 500;
           color: $colour3;
+          margin-left: $h4left;
         }
         img {
           align-self: center;
           max-width: 90%;
           filter: drop-shadow(0px 4px 15px $colour3);
+        }
+      }
+    }
+    
+    #ideate {
+      section {
+        margin: 0 auto;
+        width: 84%;
+        h4 {
+          font-size: $h4size;
+          font-weight: 400;
+          font-family: $font4;
+          color: $colour3;
+          margin-left: $h4left;
+          margin-top: 10%;
+        }
+        img {
+          display: flex;
+          width: 84%;
+          margin: 0 auto;
+          filter: drop-shadow(0px 4px 15px $colour3);
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+          .wrapimg {
+            text-align: left;
+            width: $boozyideatewidth;
+          }
+          h5 {
+            font-family: $font3;
+            font-size: $h5size;
+            font-weight: 400;
+            width: $boozyideatewidth;
+            float: left;
+            color: $colour2;
+            margin-bottom: 5rem;
+          }
         }
       }
     }
