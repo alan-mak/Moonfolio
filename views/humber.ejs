@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sunny Chung and Alan Mak">
+  <title>Humber Redesign</title>
+  <link rel="stylesheet" type="text/css" href="/styles/_header.css">
+  <link rel="stylesheet" type="text/css" href="/styles/_footer.css">
+  <link rel="stylesheet" type="text/css" href="/styles/humber.css">
+</head>
+
+<body>
+  <%- include('partials/_header.ejs') %>
+    <main>
+      <div id="project2">
+        <img src="/image/hc/Humber_Logo.png" alt="LOGO">
+        <div>
+          <h1>Humber College</h1>
+          <h2>Registration Page Redesign</h2>
+        </div>
+      </div>
+      <img src="/image/project2.jpg" alt="Humber Redesign Page" id="humberimage">
+      <div id="info">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Info</h1>
+        </section>
+        <div id="summary">
+          <section>
+            <h2>Overview</h2>
+            <p>MyHumber is a platform where all students will need to go log in and check for all their academic-related
+              information. Students can register, pay tuition, edit personal profiles,etc. in their MyHumber account.
+            </p>
+            <h2>Problem Statement</h2>
+            <p>Humber College wants to improve students' experience with Humber. Humber College aims to make the website
+              more convenient to satisfy not only domestic students but also international students when they are trying
+              to register for a course. <span>How might we redesign the registration flow and the UI to make it easier
+                for users to navigate through the website</span></p>
+          </section>
+          <section style="width: 25%;">
+            <h2>Details</h2>
+            <h6 class="detailTitle">My Role</h6>
+            <h6>Researcher, UX/UI Designer, User-Testing Facilitator</h6>
+            <h6 class="detailTitle">The Team</h6>
+            <h6>4 UX Designers</h6>
+            <h6 class="detailTitle">Duration</h6>
+            <h6>14 Weeks, September - December 2021</h6>
+            <h6 class="detailTitle">Project Type</h6>
+            <h6>School Project</h6>
+          </section>
+        </div>
+      </div>
+      <div id="image-gallery">
+        <section class="title">
+          <div class="line" style="margin-top: initial;"></div>
+          <h1>Prototype</h1>
+        </section>
+        <h3 class="title-highlight">Wireframes<section>Hi-Fi</section>
+        </h3>
+        <section class="button-container"><a
+            href="https://www.figma.com/proto/GILNUDuIz9vl4r4GcP50vz/Humber-registration-page?node-id=351%3A1699&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=351%3A1699&show-proto-sidebar=1"
+            class="button">See My Prototype</a></section>
+        <div>
+          <img src="/image/hc/prototype/registration.png" alt="Registration Page">
+          <img src="/image/hc/prototype/browse_course.png" alt="Browse Course Page">
+          <img src="/image/hc/prototype/timetable.png" alt="Timetable">
+        </div>
+
+        <div id="features">
+          <h3 class="h3-section">New Features</h3>
+          <section><span>View Holds</span> - It allows student to notice what information they are missing that is
+            require to submit before regitstartion. It also gives the instruction on how to clear holds such as student
+            visa.</section>
+          <div>
+            <img src="/image/hc/prototype/holds-text.jpeg" alt="Holds Text">
+            <img src="/image/hc/prototype/holds-instruction.png" alt="Instructions">
+          </div>
+          <section><span>View Plans</span> - Students can easily check on the courses that they have added into the
+            plan. Student can also register all courses all at once by clicking “Register All”.</section>
+          <img src="/image/hc/prototype/plan.png" alt="New Plan" id="bigger-img">
+          <section><span>Export Timetable</span> - Students have the options to export their registered timetable to
+            different device. They can easily scan the QR code, the timetable will then be downloaded into their device.
+          </section>
+          <div>
+            <img src="/image/hc/prototype/export_timetable.png" alt="Exports">
+            <img src="/image/hc/prototype/QRcode.png" alt="QR Code">
+          </div>
+        </div>
+      </div>
+      <div id="design">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Design Process</h1>
+        </section>
+        <h3 class="title-highlight">Discovery</h3>
+        <h3 class="h3-section">Research User Interview</h3>
+        <table>
+          <tr>
+            <th scope="row">Platform:</th>
+            <td scope="row">Zoom</td>
+          </tr>
+          <tr>
+            <th scope="row">Amount of Participants:</th>
+            <td scope="row">8 Current Humber College Students</td>
+          </tr>
+          <tr>
+            <th scope="row">Our Focus:</th>
+            <td scope="row">
+              <ul class="list-style">
+                <li>Current registration experience</li>
+                <li>User needs and painpoints</li>
+                <li>Users' ideal registration process</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">User Goals:</th>
+            <td scope="row">
+              <ul class="list-style">
+                <li>Register for courses</li>
+                <li>Find out program requirements</li>
+                <li>Find course information</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <h3 class="h3-section">Card Sorting</h3>
+        <div class="fake-div">
+          <p>
+            Our team analyzed the card sorting from our interviewees and identified common patterns. We then created a final card sort while taking into account their needs and feedback from the interviews.
+          </p>
+          <img src="/image/hc/discovery/card_sorting.jpeg" alt="Card sorting">
+        </div>
+        <h3 class="h3-section">Affinity Mapping</h3>
+        <div class="fake-div">
+          <img src="/image/hc/discovery/mapping.jpeg" alt="Mapping">
+        </div>
+        <h3 class="h3-section">Analysis Findings</h3>
+        <article>
+          <ul>
+            <section>Pain Points</section>
+            <li>UI Issue</li>
+            <li>Unclear registration instructions</li>
+            <li>Unnecessary and repeated pages</li>
+            <li>Unclear categories and hierarchies</li>
+            <li>Calendar/Timetable</li>
+            <li>Holds</li>
+            <li>Unclear Program Requirements</li>
+            <li>No Feedback</li>
+          </ul>
+          <ul>
+            <section>Unmet Needs</section>
+            <li>Show the course codes for the users’ programs</li>
+            <li>Clear meeting times and locations</li>
+            <li>Clear Feedback</li>
+            <li>Only show relevant courses for the program</li>
+            <li>Option to export timetable</li>
+            <li>Registration Roadmap</li>
+          </ul>
+        </article>
+      </div>
+      <div id="define">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Define</h1>
+        </section>
+        <div>
+          <h3 class="h3-section">Persona</h3>
+          <img src="/image/hc/define/persona.png" alt="persona">
+          <h3 class="h3-section">Journey Map</h3>
+          <img src="/image/hc/define/journey_map.png" alt="journey map">
+          <h3 class="h3-section">Users' Ideal Process</h3>
+          <img src="/image/hc/define/process.jpeg" alt="process">
+        </div>
+        <div>
+          <h3 class="title-highlight">Ideate</h3>
+        </div>
+        <div>
+          <h3 class="h3-section">User Flow</h3>
+          <section>After analysis the data, our team modified an user flow based on the ideal process for students easily to register for courses through their MyHumber account.</section>
+          <img src="image/hc/ideate/user_flow.jpeg" alt="User flow">
+        </div>
+        <div>
+          <h3 class="h3-section">Style Guide - Humber College</h3>
+          <section>Our team had strickly follow the Humber College style guide to match the overall atmospehere of the website.</section>
+          <img src="image/hc/ideate/colour.png" alt="Colours">
+          <img src="image/hc/ideate/button.png" alt="buttons">
+        </div>
+        <div>
+          <h3 class="h3-section">Task Flow - Problems</h3>
+          <img src="image/hc/problem/holds.png" alt="holds">
+          <img src="image/hc/problem/requirement.png" alt="requirement">
+          <img src="image/hc/problem/term.png" alt="term">
+          <img src="image/hc/problem/registration.png" alt="registration">
+        </div>
+      </div>
+      <section class="button-container"><a
+        href="https://www.figma.com/proto/GILNUDuIz9vl4r4GcP50vz/Humber-registration-page?node-id=351%3A1699&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=351%3A1699&show-proto-sidebar=1"
+        class="button">See My Prototype</a></section>
+    </main>
+    <%- include('partials/_footer.ejs') %>
+  </body>
+  
+  </html>

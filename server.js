@@ -21,6 +21,10 @@ app.get('/boozy', (req, res) => {
   res.render('boozy', dataObj);
 });
 
+app.get('/humber', (req, res) => {
+  res.render('humber', dataObj);
+});
+
 app.get('/', (req, res) => {
   res.render('index', dataObj);
 });
