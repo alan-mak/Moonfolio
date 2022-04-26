@@ -3,3 +3,4 @@ package-lock.json
 
 .vscode/
 BM_Moon/
+.DS_Store
