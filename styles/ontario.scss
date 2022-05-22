@@ -127,7 +127,6 @@ body {
     }
 
     #info {
-
       #summary {
         width: 70%;
         display: flex;
@@ -136,6 +135,8 @@ body {
         margin: 0 auto;
         section {
           width: 45%;
+          display: flex;
+          flex-direction: column;
           
           .detailTitle {
             text-transform: uppercase;
@@ -162,6 +163,17 @@ body {
             margin: 0;
           }
         }
+      }
+    }
+
+    #demo {
+      display: flex;
+      flex-direction: column;
+
+      video {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
       }
     }
 
@@ -238,7 +250,7 @@ body {
       img {
         width: 70%;
         display: block;
-        margin: 0 auto;
+        margin: 1rem auto;
       }
     }
   }
