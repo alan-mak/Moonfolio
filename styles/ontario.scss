@@ -1,0 +1,257 @@
+@import "constants.scss";
+
+html{
+    box-sizing: border-box;
+    overflow: scroll;
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background-color: $background;
+
+  .title-highlight {
+    width: 30%;
+    align-items: flex-start;
+    font-family: $font5;
+    color: $colour4;
+    font-weight: 700;
+    font-size: $h3size;
+    background-color: $background2;
+    border: 15px solid $background2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: -1%;
+    margin-top: 0%;
+    margin-right: 75%;
+    padding-right: 5%;
+    text-align: end;
+    section {
+      font-size: $h4size;
+    }
+  }
+
+  .line {
+    border: $lineborder;
+    height: 0;
+    background-color: $colour3;
+    align-self: center;
+    margin: $linemargin;
+    width: $linewidth;
+  }
+
+  .title {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+    h1 {
+      font-size: $h1size;
+      font-weight: 400;
+      font-family: $font6;
+    }
+  }
+
+  .h3-section {
+    width: 70%;
+    margin: 1% auto 0 auto;
+    color: $colour3;
+    font-family: $font4;
+    font-size: $h3size;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    .button {
+      box-sizing: border-box;
+      border: 1px solid $colourbutton2;
+      color: $colourbuttonfont2;
+      border-radius: 75px;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+      text-decoration: none;
+      font-size: $h4size;
+      padding: 1rem;
+    }
+  }
+
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      width: 100%;
+    }
+
+    #project3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      img {
+        max-width: 7%;
+      }
+      div {
+        flex-direction: column;
+        width: auto;
+        text-transform: uppercase;
+        h1 {
+          margin-bottom: 0;
+          font-family: $font7;
+          font-size: $h1size;
+          color: #86B049;
+          font-weight: 700;
+        }
+        h2 {
+          margin-top: 0;
+          font-family: $font7;
+          font-size: $h2size;
+          font-weight: 400;
+        }
+      }
+    }
+
+    #ontarioimage {
+      width: $boozyimagewidth;
+      max-height: $boozyimageheight;
+      border-radius: 25px;
+      filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    }
+
+    #info {
+      #summary {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        section {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          
+          .detailTitle {
+            text-transform: uppercase;
+            margin-top: 1rem;
+            font-size: 1rem;
+          }
+          h2 {
+            color: $colour3;
+            font-family: $font4;
+            font-size: $h2size;
+          }
+          p {
+            font-family: $font3;
+            span {
+              color: $colour3;
+              font-style: italic;
+            }
+          }
+          h6 {
+            font-family: $font5;
+            color: $colour4;
+            font-weight: 400;
+            font-size: $h6size;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    #demo {
+      display: flex;
+      flex-direction: column;
+
+      video {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    #prototype {
+      #hifi {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+        img {
+          width: 30%;
+        }
+      }
+      #new_features {
+        width: 70%;
+        margin: 2rem auto;
+        section {
+          display: flex;
+          justify-content: center;
+          gap: 3rem;
+          margin: 1rem;
+          img {
+            max-width: 25%;
+          }
+          p {
+            font-family: $font3;
+            align-self: center;
+            width: 50%;
+            span {
+              font-size: $h4size;
+            }
+          }
+        }
+      }
+    }
+
+    #design {
+      font-family: $font3;
+      #design_points {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        ul {
+          p {
+            margin: 0;
+          }
+          li {
+            list-style-position: inside;
+          }
+        }
+      }
+
+      p {
+        width: 70%;
+        margin: 1rem auto;
+      }
+
+      .h4_heading {
+        font-size: $h4size;
+        color: $colour2;
+        width: 70%;
+        margin: 1rem auto;
+      }
+
+      #image_section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        img {
+          width: 20%;
+        }
+      }
+      img {
+        width: 70%;
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+  }
+}

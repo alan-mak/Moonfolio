@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sunny Chung and Alan Mak">
+  <title>Ontario Vaccine Redesign</title>
+  <link rel="stylesheet" type="text/css" href="/styles/_header.css">
+  <link rel="stylesheet" type="text/css" href="/styles/_footer.css">
+  <link rel="stylesheet" type="text/css" href="/styles/ontario.css">
+</head>
+
+<body>
+  <%- include('partials/_header.ejs') %>
+    <main>
+      <div id="project3">
+        <img src="/image/ontario/logo.png" alt="logo">
+        <div>
+          <h1>Ontario Booking System</h1>
+          <h2>Brand New Mobile App Design</h2>
+        </div>
+      </div>
+      <img src="/image/project3.jpg" alt="Ontario Redesign" id="ontarioimage">
+      <div id="info">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Summary</h1>
+        </section>
+        <div id="summary">
+          <section>
+            <h2>Overview</h2>
+            <p>Our team designed a brand new Ontario Goverment mobile application for users who wish to book COVID-19
+              vaccinations.
+            </p>
+            <h2>Problem Statement</h2>
+            <p>Canadian Citizen and Ontario resident are experiencing confusion with the current booking system because
+              of the unclear instruction.<span>How might we design a moblie application that helps users to easily book
+                and manage vaccine booking also search for their past vaccination information.</span></p>
+          </section>
+          <section style="width: 25%;">
+            <h2>Details</h2>
+            <h6 class="detailTitle">My Role</h6>
+            <h6>Researcher, UX/UI Designer, User-Testing Facilitator, Director</h6>
+            <h6 class="detailTitle">The Team</h6>
+            <h6>4 UX Designers</h6>
+            <h6 class="detailTitle">Duration</h6>
+            <h6>14 Weeks, January - April 2022</h6>
+            <h6 class="detailTitle">Project Type</h6>
+            <h6>School Project</h6>
+          </section>
+        </div>
+      </div>
+      <div id="demo">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Demo</h1>
+        </section>
+        <section>
+          <video controls preload="metadata">
+            <source src="https://drive.google.com/file/d/1BOmWroQOoAvc8PcSnr379C06rwNhTq2V/view?usp=sharing" type="video/mp4">
+          </video>
+        </section>
+      </div>
+      <div id="prototype">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Prototype</h1>
+        </section>
+        <h3 class="title-highlight">Wireframes<section>Hi-Fi</section>
+        </h3>
+        <section class="button-container"><a href="https://www.figma.com/proto/KLvHEznvjPb6iwSUe9mHei/Hi-fi-Vaccine?node-id=218%3A3629&scaling=scale-down&page-id=0%3A1&starting-point-node-id=218%3A3606" class="button">See My Prototype</a></section>
+        <section id="hifi">
+          <img src="/image/ontario/prototype/hi-fi_booking.png" alt="booking">
+          <img src="/image/ontario/prototype/hi-fi_List.png" alt="list">
+          <img src="/image/ontario/prototype/hi-fi_upcoming.png" alt="upcoming">
+        </section>
+        <h3 class="h3-section">New Features</h3>
+        <div id="new_features">
+          <section>
+            <img src="/image/ontario/prototype/feature_healthcard.png" alt="healthcard">
+            <p><span>Multi options to create account<br></span>
+              We provide few options: Green Healthcard, Red and White Healthcard and Don’t have a Healthcard for user who has or does not have healthcard to sign up the account. The new feature helps non-citizen user avoid needing to call in the government center to book a vaccination appoinment.</p>
+          </section>
+          <section style="flex-direction: row-reverse;">
+            <img src="/image/ontario/prototype/feature_scanner.png" alt="scanner">
+            <p><span>Book an appointment by preference<br></span>User are able to choose to start the booking by distance or by date. Since everyone’s needs are different, some user might prefer to choose a neareast location, and some might think location is not a problem for them so they’d rather choose by the date. And we have provided the two differnt options for all user who wishes to book the appointment in different ways.</p>
+          </section>
+          <section>
+            <img src="/image/ontario/prototype/feature_scanner.png" alt="scanner">
+            <p><span>Scan your healthcard<br></span>Click the camera icon and let the phone do the work! User can easily turn on the camera and let the phone scan their health card. This way they don’t have to look at the tiny numbers and letters on their healthcard and there is no need to input the information manually.</p>
+          </section>
+        </div>
+      </div>
+      <div id="design">
+        <section class="title">
+          <div class="line"></div>
+          <h1>Design Process</h1>
+        </section>
+        <h3 class="title-highlight">Discovery</h3>
+        <h3 class="h3-section">Research User Interview</h3>
+        <section id="design_points">
+          <ul>
+            <p>User Pain Points</p>
+            <li>Long and unclear instructions</li>
+            <li>Repeated process for booking vaccine appointment and checking appointment</li>
+            <li>Unsure which location is the nearest location</li>
+            <li>Do not understand some complex wording</li>
+          </ul>
+          <ul>
+            <p>User Needs</p>
+            <li>Clear instructions</li>
+            <li>Easy process</li>
+            <li>Better Navigation</li>
+            <li>Simple Language</li>
+          </ul>
+        </section>
+        <h3 class="title-highlight">Define</h3>
+        <h3 class="h3-section">Card Sorting</h3>
+        <p>We asked participants to do a card sorting activity during the interviews to see what is their understanding of the Ontario government vaccination booking webstie. After our team has analysis the participants’ card sorting, we then found the pattern and created a new final card sorting.</p>
+        <h4 class="h4_heading">Participants’ Card Sorting</h4>
+        <section id="image_section">
+          <img src="/image/ontario/design/sorting_1.png" alt="card sorting 1">
+          <img src="/image/ontario/design/sorting_2.png" alt="card sorting 2">
+          <img src="/image/ontario/design/sorting_3.png" alt="card sorting 3">
+          <img src="/image/ontario/design/sorting_4.png" alt="card sorting 4">
+        </section>
+        <h4 class="h4_heading">Group - Final Card Sorting</h4>
+        <img src="/image/ontario/design/group_sorting.png" alt="group sorting">
+        <h3 class="h3-section">Information Architecture</h3>
+        <img src="/image/ontario/design/architecture.png" alt="architecture">
+        <h3 class="title-highlight">Ideate</h3>
+        <h3 class="h3-section">User Flow</h3>
+        <img src="/image/ontario/ideate/user_flow.png" alt="user flow">
+        <h3 class="h3-section">Wireflow</h3>
+        <img src="/image/ontario/ideate/wireflow.png" alt="wireflow">
+        <h3 class="h3-section">Wire Frame - Low Fidelity</h3>
+        <img src="/image/ontario/ideate/wireframe.png" alt="wireframe">
+        <section class="button-container"><a href="https://www.figma.com/proto/KLvHEznvjPb6iwSUe9mHei/Hi-fi-Vaccine?node-id=218%3A3629&scaling=scale-down&page-id=0%3A1&starting-point-node-id=218%3A3606" class="button">See My Prototype</a></section>
+      </main>
+    </body>
+    <%- include('partials/_footer.ejs') %>
+    
+    </html>

@@ -25,6 +25,10 @@ app.get('/humber', (req, res) => {
   res.render('humber', dataObj);
 });
 
+app.get('/ontario', (req, res) => {
+  res.render('ontario', dataObj);
+});
+
 app.get('/', (req, res) => {
   res.render('index', dataObj);
 });
