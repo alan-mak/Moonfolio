@@ -154,6 +154,8 @@ body main #info #summary {
 
 body main #info #summary section {
   width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
 body main #info #summary section .detailTitle {
@@ -183,6 +185,17 @@ body main #info #summary section h6 {
   font-weight: 400;
   font-size: 0.8rem;
   margin: 0;
+}
+
+body main #demo {
+  display: flex;
+  flex-direction: column;
+}
+
+body main #demo video {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 body main #prototype #hifi {
@@ -266,5 +279,5 @@ body main #design #image_section img {
 body main #design img {
   width: 70%;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
