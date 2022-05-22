@@ -195,3 +195,76 @@ body main #prototype #hifi {
 body main #prototype #hifi img {
   width: 30%;
 }
+
+body main #prototype #new_features {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+body main #prototype #new_features section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem;
+}
+
+body main #prototype #new_features section img {
+  max-width: 25%;
+}
+
+body main #prototype #new_features section p {
+  font-family: "Sanchez", normal;
+  align-self: center;
+  width: 50%;
+}
+
+body main #prototype #new_features section p span {
+  font-size: 1.5rem;
+}
+
+body main #design {
+  font-family: "Sanchez", normal;
+}
+
+body main #design #design_points {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body main #design #design_points ul p {
+  margin: 0;
+}
+
+body main #design #design_points ul li {
+  list-style-position: inside;
+}
+
+body main #design p {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+body main #design .h4_heading {
+  font-size: 1.5rem;
+  color: #756464;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+body main #design #image_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+body main #design #image_section img {
+  width: 20%;
+}
+
+body main #design img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
