@@ -192,8 +192,7 @@ body main #demo {
   flex-direction: column;
 }
 
-body main #demo video {
-  width: 90%;
+body main #demo iframe {
   display: block;
   margin: 0 auto;
 }
