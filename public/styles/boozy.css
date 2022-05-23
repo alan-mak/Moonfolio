@@ -25,50 +25,7 @@ body {
   background-color: #FFFFFF;
 }
 
-body main {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-body main .button-container {
-  display: flex;
-  justify-content: center;
-}
-
-body main .button-container .button {
-  box-sizing: border-box;
-  border: 1px solid #B623FE;
-  color: #9F01FF;
-  border-radius: 75px;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-
-body main a::visited {
-  text-decoration: none;
-}
-
-body main .title {
-  display: flex;
-  justify-content: start;
-  width: 100%;
-  margin: 0;
-}
-
-body main .line {
-  border: 2px solid #977C7C;
-  height: 0;
-  background-color: #977C7C;
-  align-self: center;
-  margin: 0 2% 0 -2%;
-  width: 48%;
-}
-
-body main .title-highlight {
+body .title-highlight {
   width: 30%;
   align-items: flex-start;
   font-family: "Signika Negative", normal;
@@ -86,10 +43,72 @@ body main .title-highlight {
   text-align: end;
 }
 
+body .title-highlight section {
+  font-size: 1.5rem;
+}
+
+body .line {
+  border: 2px solid #977C7C;
+  height: 0;
+  background-color: #977C7C;
+  align-self: center;
+  margin: 0 2% 0 -2%;
+  width: 48%;
+}
+
+body .title {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin: 0;
+}
+
+body .title h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-family: "Voltaire", normal;
+}
+
+body .h3-section {
+  width: 70%;
+  margin: 1% auto 0 auto;
+  color: #977C7C;
+  font-family: "Sunflower", normal;
+  font-size: 2rem;
+}
+
+body .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+body .button-container .button {
+  box-sizing: border-box;
+  border: 1px solid #B623FE;
+  color: #9F01FF;
+  border-radius: 75px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+body a::visited {
+  text-decoration: none;
+}
+
+body main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body main #project1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 body main #project1 img {
@@ -122,17 +141,7 @@ body main #boozyimage {
   border-radius: 25px;
 }
 
-body main #info {
-  width: 100%;
-}
-
-body main #info h1 {
-  font-family: "Voltaire", normal;
-  font-weight: 400;
-  font-size: 2.2rem;
-}
-
-body main #info div {
+body main #info #summary {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -140,32 +149,32 @@ body main #info div {
   margin: 0 auto;
 }
 
-body main #info div section {
+body main #info #summary section {
   width: 45%;
 }
 
-body main #info div section .detailTitle {
+body main #info #summary section .detailTitle {
   text-transform: uppercase;
   margin-top: 1rem;
   font-size: 1rem;
 }
 
-body main #info div section h2 {
+body main #info #summary section h2 {
   color: #977C7C;
   font-family: "Sunflower", normal;
   font-size: 2.05rem;
 }
 
-body main #info div section p {
+body main #info #summary section p {
   font-family: "Sanchez", normal;
 }
 
-body main #info div section p span {
+body main #info #summary section p span {
   color: #977C7C;
   font-style: italic;
 }
 
-body main #info div section h6 {
+body main #info #summary section h6 {
   font-family: "Signika Negative", normal;
   color: #616161;
   font-weight: 400;
@@ -174,32 +183,25 @@ body main #info div section h6 {
 }
 
 body main #image-gallery {
-  margin: 0 auto;
-}
-
-body main #image-gallery h1 {
-  font-size: 2.2rem;
-  font-weight: 400;
-  font-family: "Voltaire", normal;
-}
-
-body main #image-gallery div {
-  display: flex;
   width: 100%;
-  margin: 0 auto;
 }
 
-body main #image-gallery div div {
+body main #image-gallery #image-cart {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+body main #image-gallery #image-cart div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 50%;
   justify-content: space-between;
 }
 
-body main #image-gallery div div img {
-  margin: 3vh 0;
-  max-width: 75%;
-  max-height: 50%;
+body main #image-gallery #image-cart div img {
+  margin-top: 3vh;
   filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
@@ -255,7 +257,6 @@ body main #design .card {
 
 body main #design .card img {
   max-width: 60%;
-  filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
 body main #design .card #line1 {
@@ -309,7 +310,6 @@ body main #define section h4 {
 body main #define section img {
   align-self: center;
   max-width: 90%;
-  filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
 body main #ideate section {
@@ -330,7 +330,6 @@ body main #ideate section img {
   display: flex;
   width: 84%;
   margin: 0 auto;
-  filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
 body main #ideate section .wrapper {
