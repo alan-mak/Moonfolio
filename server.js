@@ -29,6 +29,10 @@ app.get('/ontario', (req, res) => {
   res.render('ontario', dataObj);
 });
 
+app.get('/access', (req, res) => {
+  res.render('access', dataObj);
+});
+
 app.get('/', (req, res) => {
   res.render('index', dataObj);
 });
