@@ -1,0 +1,18 @@
+@import "constants.scss";
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 40px;
+  a {
+    margin: 0 10px;
+    color: #000000;
+    font-family: $font1;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  a::visted {
+    text-decoration: none;
+  }
+}
