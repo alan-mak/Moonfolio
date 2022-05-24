@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
+@font-face {
+  font-family: 'Sanasation';
+  src: url("/fonts/SansationRegular.eot"), url("/fonts/SansationRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SansationRegular.woff") format("woff"), url("/fonts/Sansation_Regular.ttf") format("truetype"), url("/fonts/SansationRegular.svg") format("svg");
+}
+
+html {
+  box-sizing: border-box;
+  overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+body .title-highlight {
+  width: 30%;
+  align-items: flex-start;
+  font-family: "Signika Negative", normal;
+  color: #616161;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: #E5E5E5;
+  border: 15px solid #E5E5E5;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: -1%;
+  margin-top: 0%;
+  margin-right: 75%;
+  padding-right: 5%;
+  text-align: end;
+}
+
+body .title-highlight section {
+  font-size: 1.5rem;
+}
+
+body .line {
+  border: 2px solid #977C7C;
+  height: 0;
+  background-color: #977C7C;
+  align-self: center;
+  margin: 0 2% 0 -2%;
+  width: 48%;
+}
+
+body .title {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin: 0;
+}
+
+body .title h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-family: "Voltaire", normal;
+}
+
+body .h3-section {
+  width: 70%;
+  margin: 1% auto 0 auto;
+  color: #977C7C;
+  font-family: "Sunflower", normal;
+  font-size: 2rem;
+}
+
+body .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+body .button-container .button {
+  box-sizing: border-box;
+  border: 1px solid #29A0DA;
+  color: #29A0DA;
+  border-radius: 75px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+body .h4-section {
+  font-family: "Sunflower", normal;
+  font-size: 1.5rem;
+  color: #29A0DA;
+  width: 70%;
+  margin: 0 auto;
+}
+
+body main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body main div {
+  width: 100%;
+}
+
+body main #project4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+body main #project4 img {
+  max-width: 10%;
+}
+
+body main #project4 div {
+  flex-direction: column;
+  width: auto;
+  text-transform: uppercase;
+}
+
+body main #project4 div h1 {
+  margin-bottom: 0;
+  font-family: "Sanasation", normal;
+  font-size: 2.2rem;
+  color: #29A0DA;
+  font-weight: 700;
+}
+
+body main #project4 div h2 {
+  margin-top: 0;
+  font-family: "Sanasation", normal;
+  font-size: 2.05rem;
+  font-weight: 400;
+}
+
+body main #accessnow {
+  width: 84%;
+  max-height: 20%;
+  border-radius: 25px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+}
+
+body main #info #summary {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+body main #info #summary section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+body main #info #summary section .detailTitle {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+body main #info #summary section h2 {
+  color: #977C7C;
+  font-family: "Sunflower", normal;
+  font-size: 2.05rem;
+}
+
+body main #info #summary section p {
+  font-family: "Sanchez", normal;
+}
+
+body main #info #summary section p span {
+  color: #977C7C;
+  font-style: italic;
+}
+
+body main #info #summary section h6 {
+  font-family: "Signika Negative", normal;
+  color: #616161;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+body main #prototype #hifi {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+body main #prototype #hifi img {
+  width: 30%;
+}
+
+body main #prototype #new_features {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+body main #prototype #new_features section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem;
+}
+
+body main #prototype #new_features section img {
+  max-width: 25%;
+}
+
+body main #prototype #new_features section p {
+  font-family: "Sanchez", normal;
+  align-self: center;
+  width: 50%;
+}
+
+body main #prototype #new_features section p span {
+  font-size: 1.5rem;
+}
+
+body main #design {
+  font-family: "Sanchez", normal;
+}
+
+body main #design img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+body main #design #brainstorm {
+  margin: 0 auto;
+}
+
+body main #design #brainstorm img {
+  max-width: 50%;
+}
+
+body main #design #design_points {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body main #design #design_points ul {
+  width: 30%;
+}
+
+body main #design #design_points ul mar
+p {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+body main #design #design_points ul li {
+  list-style-position: inside;
+}
+
+body main #define img {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+}
+
+body main #define #analysis {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body main #define #analysis div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body main #define #analysis div img {
+  width: 45%;
+}
+
+body main #define #persona img {
+  width: 80%;
+}

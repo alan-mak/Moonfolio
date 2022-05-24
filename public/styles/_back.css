@@ -8,13 +8,13 @@
   src: url("/fonts/SansationRegular.eot"), url("/fonts/SansationRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SansationRegular.woff") format("woff"), url("/fonts/Sansation_Regular.ttf") format("truetype"), url("/fonts/SansationRegular.svg") format("svg");
 }
 
-section {
+.navback {
   width: 90%;
   margin: 0 auto;
   padding-left: 40px;
 }
 
-section a {
+.navback a {
   margin: 0 10px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
@@ -22,6 +22,6 @@ section a {
   text-decoration: none;
 }
 
-section a::visted {
+.navback a::visted {
   text-decoration: none;
 }
