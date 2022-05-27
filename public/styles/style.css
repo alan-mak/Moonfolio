@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   color: #756464;
-  background-color: #FFFFFF;
+  background-color: #EEE6E6;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -48,7 +48,7 @@ body main #home-intro {
 body main #home-intro #portfolio-picture {
   border-radius: 200px 200px 0 0;
   box-shadow: 14px 1px 17px 2px #b6a9a9;
-  z-index: 1;
+  z-index: 11;
   width: 25%;
 }
 
@@ -65,11 +65,12 @@ body main #home-intro #div-block {
   outline-style: none;
   object-fit: fill;
   text-align: center;
-  z-index: 2;
+  z-index: 12;
 }
 
 body main #home-intro #home-intro-text {
   width: auto;
+  z-index: 11;
 }
 
 body main #home-intro #home-intro-text h1 {
@@ -82,10 +83,11 @@ body main #home-intro #home-intro-text h1 {
 body main #highlights {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #FFFFFF;
   padding: 100px 30px 30px 30px;
   position: relative;
   margin-top: -100px;
+  z-index: 10;
 }
 
 body main #highlights #highlights-title {
