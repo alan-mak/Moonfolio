@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Sunny Chung and Alan Mak">
-        <title>Moon Chung</title>
-        <link rel="stylesheet" type="text/css" href="/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/styles/_header.css">
-        <link rel="stylesheet" type="text/css" href="/styles/_footer.css">
-    </head>
-    <body>
-        <%- include('partials/_header.ejs') %>
-        <main id="home-main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sunny Chung and Alan Mak">
+    <title>Moon Chung</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/_header.css">
+    <link rel="stylesheet" type="text/css" href="/styles/_footer.css">
+</head>
+
+<body>
+    <%- include('partials/_header.ejs') %>
+        <main>
             <div id="home-intro">
-                <img src="image/icon.png" alt="Moon's portfolio picture" width="350" id="portfolio-picture">
+                <img src="https://raw.githubusercontent.com/alan-mak/Moonfolio/master/images/icon.png"
+                    alt="Moon's portfolio picture" id="portfolio-picture">
                 <div id="div-block"></div>
                 <div id="home-intro-text">
                     <p>Hello world!</p>
                     <h1>I'm Moon!</h1>
-                    <p>I am an UX Designer based in <br> Toronto, Ontario.</r></p>
-                </div>                
+                    <p>I am an UX Designer based in <br> Toronto, Ontario.</r>
+                    </p>
+                </div>
             </div>
             <div id="highlights">
                 <h1 id="highlights-title">Highlights</h1>
-                <h2 style="text-align: end;">01</h2>
-                <div class="flex-container highlights-row">
-                    <img src="image/boozymeltmockup.jpg" alt="boozy melt website mockup" class="highlights-row1-image" width="300">
-                    <div class="highlights-row1-text">
-                        <h3>Boozy Melt</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                        <section class="button"><a href="/boozy">More Details...</a></section>
+                <section>
+                    <h2 style="text-align: end;">01</h2>
+                    <div class="flex-container" style="flex-direction: row-reverse;">
+                        <div class="highlights-text">
+                            <h3>Boozy Melt</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                                <a href="/boozy" class="button">More Details...</a>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/alan-mak/Moonfolio/master/images/boozymeltmockup.jpg"
+                            alt="boozy melt website mockup" class="highlights-img">
                     </div>
-                </div>
-                
-                <h2>02</h2>
-                <div class="flex-container">
-                    <div class="highlights-row2-text">
-                        <h3>Humber College -Registration Page (Re-Design)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                        <a href="/humber" class="button">More Details...</a>
+                </section>
+                <section>
+                    <h2>02</h2>
+                    <div class="flex-container">
+                        <div class="highlights-text">
+                            <h3>Humber College -Registration Page (Re-Design)</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                            <a href="/humber" class="button">More Details...</a>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/alan-mak/Moonfolio/master/images/hcr.jpg" alt=""
+                            class="highlights-img" >
                     </div>
-                    <img src="image/hcr.jpg" alt="" class="highlights-row2-image" width="300">
-                </div>
-                </div>
-                <h2>03</h2>
-                <div class="flex-container">
-                    <div class="highlights-row2-text">
-                        <h3>Ontario Vaccine Booking System(Re-Design)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                        <a href="/ontario" class="button">More Details...</a>
+                </section>
+                <section>
+                    <h2 style="text-align: end;">03</h2>
+                    <div class="flex-container" style="flex-direction: row-reverse;">
+                        <div class="highlights-text">
+                            <h3>Ontario Vaccine Booking System(Re-Design)</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo
+                                diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                                Nunc ut
+                                sem vitae risus tristique posuere.</p>
+                            <a href="/ontario" class="button">More Details...</a>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/alan-mak/Moonfolio/master/images/hcr.jpg" alt=""
+                            class="highlights-img" >
                     </div>
-                    <img src="image/hcr.jpg" alt="" class="highlights-row2-image" width="300">
-                </div>
-                </div>
+                </section>
+                <section>
+                    <h2>04</h2>
+                    <div class="flex-container">
+                        <div class="highlights-text">
+                            <h3>Access Now Mobile Application(Re-Design)</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo
+                                diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                                Nunc ut
+                                sem vitae risus tristique posuere.</p>
+                            <a href="/ontario" class="button">More Details...</a>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/alan-mak/Moonfolio/master/images/hcr.jpg" alt=""
+                            class="highlights-img" >
+                    </div>
+                </section>
             </div>
         </main>
         <%- include('partials/_footer.ejs') %>
-    </body>
+</body>
+
 </html>

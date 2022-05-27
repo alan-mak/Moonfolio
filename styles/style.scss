@@ -1,174 +1,156 @@
 @import "constants.scss";
 
-html{
+html {
     box-sizing: border-box;
     overflow: scroll;
-    
+
     /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 html::-webkit-scrollbar {
     display: none;
 }
 
-body{
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
     color: #756464;
     background-color: $background;
     font-family: $font1;
     font-weight: 400;
+
     main {
         width: 84%;
         margin: 0 auto;
+
+        #home-intro {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            width: 105%;
+            gap: 1em;
+            font-family: $font1;
+
+            #portfolio-picture {
+                border-radius: 200px 200px 0 0;
+                box-shadow: 14px 1px 17px 2px #b6a9a9;
+                z-index: 1;
+                width: 25%;
+            }
+
+            #div-block {
+                width: 15%;
+                height: 0%;
+                margin-left: -5rem;
+                border-color: #000000;
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 20px;
+                opacity: 0.69;
+                outline-color: #555555;
+                outline-style: none;
+                object-fit: fill;
+                text-align: center;
+                z-index: 2;
+            }
+
+            #home-intro-text {
+                width: auto;
+                h1 {
+                    font-size: 90px;
+                    margin: 0;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+        }
+
+        #highlights {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: $highlight-top 30px 30px 30px;
+            position: relative;
+            margin-top: -100px;
+
+            #highlights-title {
+                height: auto;
+                margin-top: -($highlight-top + $highlight-font);
+                margin-left: -11%;
+                text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+                font-size: $highlight-font;
+                color: #76787e;
+                font-weight: 400;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 2em;
+                .highlights-text {
+                    flex: 1 0 0;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .highlights-img {
+                width: 50%;
+            }
+
+            h2 {
+                font-size: 100px;
+                padding: 0;
+                margin: 0;
+                padding: 0 70px;
+                font-family: $font2;
+                font-weight: 400;
+            }
+
+            h3 {
+                margin: 0;
+                display: flex;
+                align-self: flex-start;
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            a {
+                padding: 9px 15px;
+                font-size: 16px;
+                color: #756464;
+                border: 1px solid #756464;
+                border-radius: 10px;
+                width: fit-content;
+                float: right;
+                margin-right: 50px;
+                text-decoration: none;
+            }
+        }
     }
-}
-
-img {
-    max-width: 100%;
-    height:auto;
-}
-
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2em;
-}
-
-#home-intro {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 105%;
-    gap: 1em;
-    font-family: $font1;
-}
-
-#highlights-title {
-    height: auto;
-    margin-top:  -($highlight-top + $highlight-font);
-    margin-left: -11%;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
-    font-size: $highlight-font;
-    color: #76787e;
-    font-weight: 400;
-}
-
-#div-block {
-    width: 15%;
-    height: 0%;
-    margin-left: -5rem;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    opacity: 0.69;
-    outline-color: #555555;
-    outline-style: none;
-    object-fit: fill;
-    text-align: center;
-    z-index: 2;
-}
-
-#portfolio-picture {
-    border-radius: 200px 200px 0 0;
-    box-shadow: 14px 1px 17px 2px #b6a9a9;
-    z-index: 1;
-}
-
-#home-intro-text {
-    width: auto;
-    h1{
-        font-size: 90px;
-        margin:0;
-        font-weight: 400;
-        font-style: italic;
-      
-    }
-}
-
-
-#highlights {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255,255,255,0.4);
-    padding: $highlight-top 30px 30px 30px;
-    position: relative;
-    margin-top: -100px;
-
-    h2{
-        font-size: 100px;
-        padding:0;
-        margin:0;
-        padding: 0 70px;
-        font-family: $font2;
-        font-weight: 400;
-    }
-    
-    h3{
-        margin: 0;
-        display: flex;
-        align-self: flex-start;
-        font-size: 36px;
-        font-weight: 600;
-    }
-
-    p{
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    a {
-        padding: 9px 15px;
-        font-size: 16px;
-        color: #756464;
-        border: 1px solid #756464;
-        border-radius: 10px;
-        width: fit-content;
-        float: right;
-        margin-right: 50px;
-        text-decoration: none;
-    }
-}
-
-
-
-
-.highlights-row {
-    margin-bottom: 20px;
-}
-
-.highlights-row1-image, .highlights-row2-image{
-    flex: 1 0 0;
-}
-
-.highlights-row1-text, .highlights-row2-text {
-    flex:1 0 0;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.highlights-row-text p{
-    width:80%;
-    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-    .highlights-row1-image, .highlights-row2-image {
+    .highlights-img {
         flex: 1 0 100%;
     }
-    
-    .highlights-row1-text, .highlights-row2-text{
-        flex:1 0 100%;
+
+    .highlights-text {
+        flex: 1 0 100%;
     }
-    .highlights-row2-text {
-        order: 1;
-    }
-    #home-intro-text  h1{
+    // .highlights-row2-text {
+    //     order: 1;
+    // }
+    #home-intro-text h1 {
         font-size: 50px;
     }
-  }
+}

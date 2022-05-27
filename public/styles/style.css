@@ -36,18 +36,7 @@ body main {
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 2em;
-}
-
-#home-intro {
+body main #home-intro {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -56,17 +45,14 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
-#highlights-title {
-  height: auto;
-  margin-top: -144px;
-  margin-left: -11%;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
-  font-size: 44px;
-  color: #76787e;
-  font-weight: 400;
+body main #home-intro #portfolio-picture {
+  border-radius: 200px 200px 0 0;
+  box-shadow: 14px 1px 17px 2px #b6a9a9;
+  z-index: 1;
+  width: 25%;
 }
 
-#div-block {
+body main #home-intro #div-block {
   width: 15%;
   height: 0%;
   margin-left: -5rem;
@@ -82,24 +68,18 @@ img {
   z-index: 2;
 }
 
-#portfolio-picture {
-  border-radius: 200px 200px 0 0;
-  box-shadow: 14px 1px 17px 2px #b6a9a9;
-  z-index: 1;
-}
-
-#home-intro-text {
+body main #home-intro #home-intro-text {
   width: auto;
 }
 
-#home-intro-text h1 {
+body main #home-intro #home-intro-text h1 {
   font-size: 90px;
   margin: 0;
   font-weight: 400;
   font-style: italic;
 }
 
-#highlights {
+body main #highlights {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.4);
@@ -108,7 +88,35 @@ img {
   margin-top: -100px;
 }
 
-#highlights h2 {
+body main #highlights #highlights-title {
+  height: auto;
+  margin-top: -144px;
+  margin-left: -11%;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  font-size: 44px;
+  color: #76787e;
+  font-weight: 400;
+}
+
+body main #highlights .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+}
+
+body main #highlights .flex-container .highlights-text {
+  flex: 1 0 0;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body main #highlights .highlights-img {
+  width: 50%;
+}
+
+body main #highlights h2 {
   font-size: 100px;
   padding: 0;
   margin: 0;
@@ -117,7 +125,7 @@ img {
   font-weight: 400;
 }
 
-#highlights h3 {
+body main #highlights h3 {
   margin: 0;
   display: flex;
   align-self: flex-start;
@@ -125,12 +133,12 @@ img {
   font-weight: 600;
 }
 
-#highlights p {
+body main #highlights p {
   font-size: 16px;
   line-height: 28px;
 }
 
-#highlights a {
+body main #highlights a {
   padding: 9px 15px;
   font-size: 16px;
   color: #756464;
@@ -142,36 +150,12 @@ img {
   text-decoration: none;
 }
 
-.highlights-row {
-  margin-bottom: 20px;
-}
-
-.highlights-row1-image, .highlights-row2-image {
-  flex: 1 0 0;
-}
-
-.highlights-row1-text, .highlights-row2-text {
-  flex: 1 0 0;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.highlights-row-text p {
-  width: 80%;
-  margin-bottom: 30px;
-}
-
 @media only screen and (max-width: 768px) {
-  .highlights-row1-image, .highlights-row2-image {
+  .highlights-img {
     flex: 1 0 100%;
   }
-  .highlights-row1-text, .highlights-row2-text {
+  .highlights-text {
     flex: 1 0 100%;
-  }
-  .highlights-row2-text {
-    order: 1;
   }
   #home-intro-text h1 {
     font-size: 50px;
