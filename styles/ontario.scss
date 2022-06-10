@@ -15,6 +15,13 @@ html::-webkit-scrollbar {
 
 body {
   background-color: $background;
+  header {
+    nav {
+      ul {
+        background-color: $background;
+      }
+    }
+  }
 
   .title-highlight {
     width: 30%;

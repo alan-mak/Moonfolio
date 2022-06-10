@@ -27,6 +27,10 @@ body {
   background-color: #FFFFFF;
 }
 
+body header nav ul {
+  background-color: #FFFFFF;
+}
+
 body .title-highlight {
   width: 30%;
   align-items: flex-start;
