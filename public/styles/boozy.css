@@ -93,6 +93,7 @@ body .button-container .button {
   border-radius: 75px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   text-decoration: none;
+  font-family: "Sunflower", normal;
   font-size: 1.5rem;
   padding: 1rem;
 }
@@ -116,7 +117,7 @@ body main #project1 {
 }
 
 body main #project1 img {
-  max-width: 35%;
+  width: 15%;
 }
 
 body main #project1 div {
@@ -299,7 +300,7 @@ body main #define h3 {
 }
 
 body main #define section {
-  width: 84%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -308,12 +309,11 @@ body main #define section h4 {
   font-family: "Sunflower", normal;
   font-weight: 500;
   color: #977C7C;
-  margin-left: 15%;
 }
 
 body main #define section img {
   align-self: center;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 body main #ideate section {
@@ -343,16 +343,21 @@ body main #ideate section .wrapper {
   margin: 0 auto;
 }
 
+body main #ideate section .wrapper #moodBoard {
+  margin-top: 3rem;
+  width: 40%;
+}
+
 body main #ideate section .wrapper .wrapimg {
   text-align: left;
-  width: 70%;
+  width: 40%;
 }
 
 body main #ideate section .wrapper h5 {
   font-family: "Sanchez", normal;
   font-size: 1rem;
   font-weight: 400;
-  width: 70%;
+  width: 40%;
   float: left;
   color: #756464;
   margin-bottom: 5rem;
