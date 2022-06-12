@@ -82,6 +82,7 @@ body {
       border-radius: 75px;
       filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
       text-decoration: none;
+      font-family: $font4;
       font-size: $h4size;
       padding: 1rem;
     }
@@ -103,7 +104,7 @@ body {
       justify-content: center;
       gap: 2rem;
       img {
-        max-width: 35%;
+        width: 15%;
       }
       div {
         flex-direction: column;
@@ -257,7 +258,6 @@ body {
       margin-bottom: 5rem;
       display: flex;
       flex-direction: column;
-      // width: 84%;
       h3 {
         font-family: $font4;
         color: $colour4;
@@ -265,19 +265,18 @@ body {
         font-size: $h3size;
       }
       section {
-        width: 84%;
+        width: 60%;
         margin: 0 auto;
         h4 {
           font-size: $h4size;
           font-family: $font4;
           font-weight: 500;
           color: $colour3;
-          margin-left: $h4left;
+          // margin-left: $h4left;
         }
         img {
           align-self: center;
-          max-width: 90%;
-          // filter: drop-shadow(0px 4px 15px $colour3);
+          max-width: 100%;
         }
       }
     }
@@ -305,6 +304,10 @@ body {
           flex-direction: column;
           align-items: center;
           margin: 0 auto;
+          #moodBoard {
+            margin-top: 3rem;
+            width: 40%;
+          }
           .wrapimg {
             text-align: left;
             width: $boozyideatewidth;

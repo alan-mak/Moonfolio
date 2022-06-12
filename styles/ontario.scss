@@ -66,8 +66,8 @@ body {
   }
 
   .h3-section {
-    width: 70%;
-    margin: 1% auto 0 auto;
+    width: 60%;
+    margin: 0 auto;
     color: $colour3;
     font-family: $font4;
     font-size: $h3size;
@@ -80,6 +80,7 @@ body {
       box-sizing: border-box;
       border: 1px solid $colourbutton2;
       color: $colourbuttonfont2;
+      font-family: $font4;
       border-radius: 75px;
       filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
       text-decoration: none;
@@ -154,6 +155,7 @@ body {
             color: $colour3;
             font-family: $font4;
             font-size: $h2size;
+            margin-bottom: 0;
           }
           p {
             font-family: $font3;
@@ -186,11 +188,10 @@ body {
     #prototype {
       #hifi {
         display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        gap: 1rem;
+        justify-content: space-evenly;
+        margin: 2rem auto;
         img {
-          width: 30%;
+          width: 20%;
         }
       }
       #new_features {
@@ -206,10 +207,12 @@ body {
           }
           p {
             font-family: $font3;
+            font-size: $h4size;
             align-self: center;
             width: 50%;
             span {
-              font-size: $h4size;
+              margin-bottom: 2rem;
+              font-style: italic;
             }
           }
         }
@@ -222,6 +225,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 0 auto;
         ul {
           p {
             margin: 0;
@@ -241,7 +245,7 @@ body {
         font-size: $h4size;
         color: $colour2;
         width: 70%;
-        margin: 1rem auto;
+        margin: 3rem auto;
       }
 
       #image_section {

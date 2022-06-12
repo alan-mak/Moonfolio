@@ -75,8 +75,8 @@ body .title h1 {
 }
 
 body .h3-section {
-  width: 70%;
-  margin: 1% auto 0 auto;
+  width: 80%;
+  margin: 3rem auto 0 auto;
   color: #977C7C;
   font-family: "Sunflower", normal;
   font-size: 2rem;
@@ -94,6 +94,7 @@ body .button-container .button {
   border-radius: 75px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   text-decoration: none;
+  font-family: "Sunflower", normal;
   font-size: 1.5rem;
   padding: 1rem;
 }
@@ -201,13 +202,12 @@ body main #info #summary section h6 {
 
 body main #prototype #hifi {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
 }
 
 body main #prototype #hifi img {
-  width: 30%;
+  width: 20%;
 }
 
 body main #prototype #new_features {
@@ -228,12 +228,14 @@ body main #prototype #new_features section img {
 
 body main #prototype #new_features section p {
   font-family: "Sanchez", normal;
+  font-size: 1.5rem;
   align-self: center;
   width: 50%;
 }
 
 body main #prototype #new_features section p span {
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
 }
 
 body main #design {
@@ -247,11 +249,21 @@ body main #design img {
 }
 
 body main #design #brainstorm {
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 body main #design #brainstorm img {
-  max-width: 50%;
+  width: 80%;
+}
+
+body main #design #brainstorm div {
+  display: flex;
+  align-items: center;
+}
+
+body main #design #brainstorm div img {
+  width: 25%;
+  height: fit-content;
 }
 
 body main #design #design_points {
@@ -262,10 +274,10 @@ body main #design #design_points {
 
 body main #design #design_points ul {
   width: 30%;
+  margin: 1rem auto;
 }
 
-body main #design #design_points ul mar
-p {
+body main #design #design_points ul p {
   margin-bottom: 0;
   margin-top: 1rem;
   font-weight: 800;
@@ -282,7 +294,7 @@ body main #define img {
 }
 
 body main #define #analysis {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -294,9 +306,19 @@ body main #define #analysis div {
 }
 
 body main #define #analysis div img {
-  width: 45%;
+  width: 35%;
 }
 
-body main #define #persona img {
-  width: 80%;
+body main #define #persona section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+body main #define #persona section img {
+  margin: 0 auto;
+  width: 60%;
+  display: block;
+  align-self: flex-start;
 }
