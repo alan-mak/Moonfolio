@@ -66,8 +66,8 @@ body {
   }
 
   .h3-section {
-    width: 70%;
-    margin: 1% auto 0 auto;
+    width: 80%;
+    margin: 3rem auto 0 auto;
     color: $colour3;
     font-family: $font4;
     font-size: $h3size;
@@ -185,11 +185,10 @@ body {
     #prototype {
       #hifi {
         display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        gap: 1rem;
+        justify-content: space-evenly;
+        margin: 2rem auto;
         img {
-          width: 30%;
+          width: 20%;
         }
       }
       #new_features {
@@ -205,10 +204,12 @@ body {
           }
           p {
             font-family: $font3;
+            font-size: $h4size;
             align-self: center;
             width: 50%;
             span {
-              font-size: $h4size;
+              margin-bottom: 2rem;
+              font-style: italic;
             }
           }
         }
@@ -223,9 +224,17 @@ body {
         max-width: 90%;
       }
       #brainstorm {
-        margin: 0 auto;
+        margin: 1rem auto;
         img {
-          max-width: 50%;
+          width: 80%;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          img {
+            width: 25%;
+            height: fit-content;
+          }
         }
       }
       #design_points {
@@ -234,7 +243,7 @@ body {
         justify-content: center;
         ul {
           width: 30%;
-          mar
+          margin: 1rem auto;
           p {
             margin-bottom: 0;
             margin-top: 1rem;
@@ -254,7 +263,7 @@ body {
         margin: 1rem auto;
       }
       #analysis {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -262,13 +271,22 @@ body {
           display: flex;
           justify-content: space-evenly;
           img {
-            width: 45%;
+            width: 35%;
           }
         }
       }
       #persona {
-        img {
-          width: 80%;
+        section {
+          display: flex;
+          flex-direction: column;
+          justify-content:flex-start;
+          max-width: 100%;
+          img {
+            margin: 0 auto;
+            width: 60%;
+            display: block;
+            align-self: flex-start;
+          }
         }
       }
     }

@@ -231,6 +231,7 @@ body main #prototype #new_features section img {
 
 body main #prototype #new_features section p {
   font-family: "Sanchez", normal;
+  font-size: 1.5rem;
   align-self: center;
   width: 50%;
 }
