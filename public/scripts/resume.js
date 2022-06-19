@@ -1,7 +1,7 @@
 $(document).ready(function() {
   const $link = $("#resume");
   $link.on("click", function() {
-    window.open('../documents/test.pdf');
+    window.open('../documents/resume.pdf');
     return false;
   });
 });
