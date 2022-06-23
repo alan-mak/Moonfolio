@@ -137,6 +137,7 @@ body main #highlights h3 {
   align-self: center;
   font-size: 36px;
   font-weight: 600;
+  color: #572727;
 }
 
 body main #highlights p {
@@ -144,7 +145,7 @@ body main #highlights p {
   line-height: 28px;
 }
 
-body main #highlights a {
+body main #highlights .button {
   padding: 9px 15px;
   font-size: 16px;
   color: #756464;
@@ -152,8 +153,8 @@ body main #highlights a {
   border-radius: 10px;
   width: fit-content;
   float: right;
-  margin-right: 50px;
   text-decoration: none;
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 768px) {
