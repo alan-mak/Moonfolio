@@ -1,16 +1,16 @@
 @import "constants.scss";
 
-html{
-    box-sizing: border-box;
-    overflow: scroll;
-    
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+html {
+  box-sizing: border-box;
+  overflow: scroll;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 html::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
@@ -39,9 +39,6 @@ body {
     margin-right: 75%;
     padding-right: 5%;
     text-align: end;
-    section {
-      font-size: $h4size;
-    }
   }
 
   .line {
@@ -94,6 +91,21 @@ body {
       padding: 1rem;
     }
   }
+  .fake-div {
+    width: 70%;
+    margin: 0 auto;
+    p {
+      font-family: $font3;
+    }
+    img {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    #affinity {
+      width: 100%;
+    }
+  }
 
   a::visited {
     text-decoration: none;
@@ -104,10 +116,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    div {
-      width: 100%;
-    }
 
     #project2 {
       display: flex;
@@ -125,7 +133,7 @@ body {
           margin-bottom: 0;
           font-family: $font7;
           font-size: $h1size;
-          color: #192B5A;
+          color: #192b5a;
           font-weight: 700;
         }
         h2 {
@@ -193,75 +201,78 @@ body {
         img {
           max-width: 45%;
           filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+          margin: 1rem auto;
         }
       }
-      #features {
-        display: flex;
-        flex-direction: column;
-        width: 84%;
-        margin: 0 auto;
-        // h3 {
-        //   width: 100%;
-        //   font-family: $font4;
-        //   color: $colour3;
-        //   font-size: $h3size;
-        // }
-  
+    }
+
+    #features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      div {
         div {
-          gap: 5rem;
+          display: flex;
+          justify-content: center;
           img {
+            display: block;
+            align-self: center;
             max-width: 35%;
             filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+            margin: 1rem auto;
           }
         }
-
         #bigger-img {
           max-width: 60%;
+          display: block;
+          margin: 0 auto;
         }
+      }
 
-        section {
-          font-family: $font3;
-          font-weight: 400;
-          font-size: $h5size;
-          width: 60%;
-          span {
-            font-size: $h4size;
-          }
+      section {
+        font-family: $font3;
+        font-weight: 400;
+        font-size: $h5size;
+        margin: 1rem auto;
+        span {
+          font-size: $h4size;
+          color: $colour3;
+          font-family: $font4;
         }
       }
     }
     #design {
-      table {
-        width: 50%;
-        margin: 0 auto;
+      .table {
         font-family: $font3;
         font-weight: 400;
-        tr {
-          vertical-align: top;
-          th {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        div {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          width: 80%;
+          .heading {
+            width: 25%;
+          }
+          .result {
+            width: 25%;
+          }
+          section {
             font-weight: 400;
             text-align: start;
-          }
-          td {
-            margin-left: 1rem;
             ol {
               li::marker {
-                content:"(" counter(list-item) ")\2003";
+                content: "(" counter(list-item) ")\2003";
               }
             }
+            ul {
+              margin-bottom: 0;
+            }
           }
-        }
-      }
-      .fake-div {
-        width: 70%;
-        margin: 0 auto;
-        p {
-          font-family: $font3;
-        }
-        img {
-          width: 100%;
-          display: block;
-          margin: 0 auto;
         }
       }
       article {
@@ -272,6 +283,7 @@ body {
         ul {
           section {
             justify-content: start;
+            margin: 0 0 1rem -1rem;
           }
           li {
             list-style-position: inside;
@@ -290,6 +302,11 @@ body {
         section {
           width: 70%;
           margin: 0 auto;
+        }
+      }
+      #guide {
+        img {
+          width: 40%;
         }
       }
     }

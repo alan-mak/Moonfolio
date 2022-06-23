@@ -49,10 +49,6 @@ body .title-highlight {
   text-align: end;
 }
 
-body .title-highlight section {
-  font-size: 1.5rem;
-}
-
 body .line {
   border: 2px solid #977C7C;
   height: 0;
@@ -96,14 +92,33 @@ body .button-container {
 
 body .button-container .button {
   box-sizing: border-box;
-  border: 1px solid #B623FE;
-  color: #9F01FF;
+  border: 1px solid #192B5A;
+  color: #192B5A;
   border-radius: 75px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   text-decoration: none;
   font-family: "Sunflower", normal;
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+body .fake-div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+body .fake-div p {
+  font-family: "Sanchez", normal;
+}
+
+body .fake-div img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+body .fake-div #affinity {
+  width: 100%;
 }
 
 body a::visited {
@@ -115,10 +130,6 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-body main div {
-  width: 100%;
 }
 
 body main #project2 {
@@ -142,7 +153,7 @@ body main #project2 div h1 {
   margin-bottom: 0;
   font-family: "Sanasation", normal;
   font-size: 2.2rem;
-  color: #192B5A;
+  color: #192b5a;
   font-weight: 700;
 }
 
@@ -213,76 +224,83 @@ body main #image-gallery div {
 body main #image-gallery div img {
   max-width: 45%;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  margin: 1rem auto;
 }
 
-body main #image-gallery #features {
+body main #features {
   display: flex;
   flex-direction: column;
-  width: 84%;
+  align-items: center;
   margin: 0 auto;
 }
 
-body main #image-gallery #features div {
-  gap: 5rem;
+body main #features div div {
+  display: flex;
+  justify-content: center;
 }
 
-body main #image-gallery #features div img {
+body main #features div div img {
+  display: block;
+  align-self: center;
   max-width: 35%;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  margin: 1rem auto;
 }
 
-body main #image-gallery #features #bigger-img {
+body main #features div #bigger-img {
   max-width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
-body main #image-gallery #features section {
+body main #features section {
   font-family: "Sanchez", normal;
   font-weight: 400;
   font-size: 1rem;
-  width: 60%;
+  margin: 1rem auto;
 }
 
-body main #image-gallery #features section span {
+body main #features section span {
   font-size: 1.5rem;
+  color: #977C7C;
+  font-family: "Sunflower", normal;
 }
 
-body main #design table {
-  width: 50%;
-  margin: 0 auto;
+body main #design .table {
   font-family: "Sanchez", normal;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
-body main #design table tr {
-  vertical-align: top;
+body main #design .table div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
 }
 
-body main #design table tr th {
+body main #design .table div .heading {
+  width: 25%;
+}
+
+body main #design .table div .result {
+  width: 25%;
+}
+
+body main #design .table div section {
   font-weight: 400;
   text-align: start;
 }
 
-body main #design table tr td {
-  margin-left: 1rem;
-}
-
-body main #design table tr td ol li::marker {
+body main #design .table div section ol li::marker {
   content: "(" counter(list-item) ") ";
 }
 
-body main #design .fake-div {
-  width: 70%;
-  margin: 0 auto;
-}
-
-body main #design .fake-div p {
-  font-family: "Sanchez", normal;
-}
-
-body main #design .fake-div img {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
+body main #design .table div section ul {
+  margin-bottom: 0;
 }
 
 body main #design article {
@@ -294,6 +312,7 @@ body main #design article {
 
 body main #design article ul section {
   justify-content: start;
+  margin: 0 0 1rem -1rem;
 }
 
 body main #design article ul li {
@@ -313,4 +332,8 @@ body main #define div img {
 body main #define div section {
   width: 70%;
   margin: 0 auto;
+}
+
+body main #define #guide img {
+  width: 40%;
 }
