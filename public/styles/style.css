@@ -104,6 +104,7 @@ body main #highlights .flex-container {
   display: flex;
   flex-flow: row wrap;
   gap: 2em;
+  margin: 1rem auto;
 }
 
 body main #highlights .flex-container .highlights-text {
@@ -112,25 +113,28 @@ body main #highlights .flex-container .highlights-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 body main #highlights .highlights-img {
   width: 50%;
+  border-radius: 15px;
 }
 
 body main #highlights h2 {
   font-size: 100px;
-  padding: 0;
   margin: 0;
-  padding: 0 70px;
   font-family: "Inconsolata", monospace;
   font-weight: 400;
+  color: #756464;
+  align-self: start;
 }
 
 body main #highlights h3 {
   margin: 0;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   font-size: 36px;
   font-weight: 600;
 }

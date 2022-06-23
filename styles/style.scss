@@ -91,32 +91,36 @@ body {
                 display: flex;
                 flex-flow: row wrap;
                 gap: 2em;
+                margin: 1rem auto;
                 .highlights-text {
                     flex: 1 0 0;
                     color: black;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: space-around;
+                    text-align: center;
                 }
             }
 
             .highlights-img {
                 width: 50%;
+                border-radius: 15px;
             }
 
             h2 {
                 font-size: 100px;
-                padding: 0;
                 margin: 0;
-                padding: 0 70px;
                 font-family: $font2;
                 font-weight: 400;
+                color: $colour2;
+                align-self: start;
             }
 
             h3 {
                 margin: 0;
                 display: flex;
-                align-self: flex-start;
+                align-self: center;
                 font-size: 36px;
                 font-weight: 600;
             }
@@ -150,9 +154,6 @@ body {
     .highlights-text {
         flex: 1 0 100%;
     }
-    // .highlights-row2-text {
-    //     order: 1;
-    // }
     #home-intro-text h1 {
         font-size: 50px;
     }
