@@ -109,6 +109,7 @@ body .fake-div {
 body .fake-div p {
   font-family: "Sanchez", normal;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 body .fake-div img {
@@ -212,7 +213,6 @@ body main #info #summary section h6 {
 }
 
 body main #image-gallery div {
-  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

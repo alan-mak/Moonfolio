@@ -96,6 +96,7 @@ body {
     p {
       font-family: $font3;
       margin-top: 0;
+      margin-bottom: 0;
     }
     img {
       width: 50%;
@@ -191,7 +192,6 @@ body {
 
     #image-gallery {
       div {
-        margin: 2rem 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
