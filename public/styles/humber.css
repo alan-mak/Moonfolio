@@ -73,7 +73,7 @@ body .title h1 {
 
 body .h3-section {
   width: 70%;
-  margin: 1% auto 0 auto;
+  margin: 1rem auto 0 auto;
   color: #977C7C;
   font-family: "Sunflower", normal;
   font-size: 2rem;
@@ -95,7 +95,6 @@ body .button-container .button {
   border: 1px solid #192B5A;
   color: #192B5A;
   border-radius: 75px;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   text-decoration: none;
   font-family: "Sunflower", normal;
   font-size: 1.5rem;
@@ -109,6 +108,7 @@ body .fake-div {
 
 body .fake-div p {
   font-family: "Sanchez", normal;
+  margin-top: 0;
 }
 
 body .fake-div img {
@@ -168,7 +168,6 @@ body main #humberimage {
   width: 84%;
   max-height: 20%;
   border-radius: 25px;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
 }
 
 body main #info #summary {
@@ -213,7 +212,7 @@ body main #info #summary section h6 {
 }
 
 body main #image-gallery div {
-  margin-top: 2rem;
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -223,7 +222,6 @@ body main #image-gallery div {
 
 body main #image-gallery div img {
   max-width: 45%;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
   margin: 1rem auto;
 }
 
@@ -243,21 +241,20 @@ body main #features div div img {
   display: block;
   align-self: center;
   max-width: 35%;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-  margin: 1rem auto;
+  margin: 1.5rem auto;
 }
 
 body main #features div #bigger-img {
   max-width: 60%;
   display: block;
-  margin: 0 auto;
+  margin: 1.5rem auto;
 }
 
 body main #features section {
   font-family: "Sanchez", normal;
   font-weight: 400;
   font-size: 1rem;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
 }
 
 body main #features section span {
@@ -324,7 +321,7 @@ body main #define div {
 }
 
 body main #define div img {
-  width: 75%;
+  width: 70%;
   display: block;
   margin: 1rem auto;
 }
