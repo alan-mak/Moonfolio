@@ -30,7 +30,7 @@ body header nav ul {
 }
 
 body .title-highlight {
-  width: 30%;
+  width: 20%;
   align-items: flex-start;
   font-family: "Signika Negative", normal;
   color: #616161;
@@ -207,7 +207,6 @@ body main #image-gallery #image-cart div {
 
 body main #image-gallery #image-cart div img {
   margin-top: 3vh;
-  filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
 body main #design h1 {
@@ -224,7 +223,7 @@ body main #design h3 {
 }
 
 body main #design section {
-  width: 53%;
+  width: 70%;
   font-family: "Sanchez", normal;
   display: flex;
   flex-direction: column;
@@ -300,7 +299,7 @@ body main #define h3 {
 }
 
 body main #define section {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -318,7 +317,7 @@ body main #define section img {
 
 body main #ideate section {
   margin: 0 auto;
-  width: 84%;
+  width: 70%;
 }
 
 body main #ideate section h4 {
@@ -326,8 +325,6 @@ body main #ideate section h4 {
   font-weight: 400;
   font-family: "Sunflower", normal;
   color: #977C7C;
-  margin-left: 15%;
-  margin-top: 10%;
 }
 
 body main #ideate section img {
