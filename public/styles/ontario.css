@@ -31,7 +31,7 @@ body header nav ul {
 }
 
 body .title-highlight {
-  width: 30%;
+  width: 20%;
   align-items: flex-start;
   font-family: "Signika Negative", normal;
   color: #616161;
@@ -46,10 +46,6 @@ body .title-highlight {
   margin-right: 75%;
   padding-right: 5%;
   text-align: end;
-}
-
-body .title-highlight section {
-  font-size: 1.5rem;
 }
 
 body .line {
@@ -85,6 +81,7 @@ body .h3-section {
 body .button-container {
   display: flex;
   justify-content: center;
+  margin: 2rem auto;
 }
 
 body .button-container .button {
@@ -118,7 +115,9 @@ body main #project3 {
 }
 
 body main #project3 img {
-  max-width: 7%;
+  width: 7%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 body main #project3 div {
@@ -211,32 +210,33 @@ body main #prototype #hifi {
 
 body main #prototype #hifi img {
   width: 20%;
+  margin: 2rem auto;
 }
 
-body main #prototype #new_features {
+body main #new_features {
   width: 70%;
   margin: 2rem auto;
 }
 
-body main #prototype #new_features section {
+body main #new_features section {
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin: 1rem;
 }
 
-body main #prototype #new_features section img {
+body main #new_features section img {
   max-width: 25%;
 }
 
-body main #prototype #new_features section p {
+body main #new_features section p {
   font-family: "Sanchez", normal;
   font-size: 1.5rem;
   align-self: center;
   width: 50%;
 }
 
-body main #prototype #new_features section p span {
+body main #new_features section p span {
   margin-bottom: 2rem;
   font-style: italic;
 }
@@ -250,6 +250,10 @@ body main #design #design_points {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
+}
+
+body main #design #design_points ul {
+  margin-bottom: 2rem;
 }
 
 body main #design #design_points ul p {

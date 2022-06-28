@@ -31,7 +31,7 @@ body header nav ul {
 }
 
 body .title-highlight {
-  width: 30%;
+  width: 20%;
   align-items: flex-start;
   font-family: "Signika Negative", normal;
   color: #616161;
@@ -75,7 +75,7 @@ body .title h1 {
 }
 
 body .h3-section {
-  width: 80%;
+  width: 70%;
   margin: 3rem auto 0 auto;
   color: #977C7C;
   font-family: "Sunflower", normal;
@@ -245,7 +245,7 @@ body main #design {
 body main #design img {
   display: block;
   margin: 0 auto;
-  max-width: 90%;
+  width: 70%;
 }
 
 body main #design #brainstorm {
@@ -253,7 +253,7 @@ body main #design #brainstorm {
 }
 
 body main #design #brainstorm img {
-  width: 80%;
+  width: 70%;
 }
 
 body main #design #brainstorm div {
@@ -270,6 +270,8 @@ body main #design #design_points {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 body main #design #design_points ul {
@@ -288,7 +290,7 @@ body main #design #design_points ul li {
 }
 
 body main #define img {
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 1rem auto;
 }
@@ -309,16 +311,16 @@ body main #define #analysis div img {
   width: 35%;
 }
 
-body main #define #persona section {
+body main #define #persona #userFlow {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 100%;
+  width: 100%;
 }
 
-body main #define #persona section img {
+body main #define #persona #userFlow img {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   display: block;
   align-self: flex-start;
 }

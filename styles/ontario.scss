@@ -24,7 +24,7 @@ body {
   }
 
   .title-highlight {
-    width: 30%;
+    width: 20%;
     align-items: flex-start;
     font-family: $font5;
     color: $colour4;
@@ -39,9 +39,6 @@ body {
     margin-right: 75%;
     padding-right: 5%;
     text-align: end;
-    section {
-      font-size: $h4size;
-    }
   }
 
   .line {
@@ -76,6 +73,7 @@ body {
   .button-container {
     display: flex;
     justify-content: center;
+    margin: 2rem auto;
     .button {
       box-sizing: border-box;
       border: 1px solid $colourbutton2;
@@ -105,7 +103,9 @@ body {
       justify-content: center;
       gap: 2rem;
       img {
-        max-width: 7%;
+        width: 7%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
       div {
         flex-direction: column;
@@ -192,8 +192,10 @@ body {
         margin: 2rem auto;
         img {
           width: 20%;
+          margin: 2rem auto;
         }
       }
+    }
       #new_features {
         width: 70%;
         margin: 2rem auto;
@@ -217,7 +219,6 @@ body {
           }
         }
       }
-    }
 
     #design {
       font-family: $font3;
@@ -227,6 +228,7 @@ body {
         justify-content: center;
         margin: 0 auto;
         ul {
+          margin-bottom: 2rem;
           p {
             margin: 0;
           }
