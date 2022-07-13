@@ -40,26 +40,28 @@ body {
     padding-right: 5%;
     text-align: end;
   }
-
-  .line {
-    border: $lineborder;
-    height: 0;
-    background-color: $colour3;
-    align-self: center;
-    margin: $linemargin;
-    width: $linewidth;
-  }
-
+  
   .title {
     display: flex;
-    justify-content: start;
-    width: 100%;
-    margin: 0;
     h1 {
       font-size: $h1size;
       font-weight: 400;
       font-family: $font6;
+      margin: 2rem;
     }
+  }
+  .title::before {
+    content:"";
+    flex: 1 1;
+    border-bottom: 4px solid $colour3;
+    margin: auto;
+
+  }
+  .title::after {
+    content:"";
+    flex: 1 1;
+    border-bottom: 0px solid;
+    margin: auto;
   }
 
   .h3-section {
@@ -99,7 +101,7 @@ body {
     align-items: center;
 
     div {
-      width: 100%;
+      width: 101%;
     }
 
     #project3 {
