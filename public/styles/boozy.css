@@ -207,6 +207,7 @@ body main #image-gallery #image-cart div {
 
 body main #image-gallery #image-cart div img {
   margin-top: 3vh;
+  filter: drop-shadow(0px 4px 15px #977C7C);
 }
 
 body main #design h1 {

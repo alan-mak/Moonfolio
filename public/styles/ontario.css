@@ -85,15 +85,21 @@ body .button-container {
 }
 
 body .button-container .button {
-  box-sizing: border-box;
-  border: 1px solid #86B049;
-  color: #9DCD57;
-  font-family: "Sunflower", normal;
-  border-radius: 75px;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-  text-decoration: none;
+  padding: 9px 15px;
   font-size: 1.5rem;
-  padding: 1rem;
+  color: #756464;
+  border: 2px solid #756464;
+  border-radius: 10px;
+  width: fit-content;
+  float: right;
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+body .button-container .button:hover {
+  background-color: #756464;
+  color: #FFFFFF;
+  transition: top 1s;
 }
 
 body main {
@@ -221,7 +227,7 @@ body main #new_features {
 body main #new_features section {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 4rem;
   margin: 1rem;
 }
 
@@ -233,11 +239,15 @@ body main #new_features section p {
   font-family: "Sanchez", normal;
   font-size: 1.5rem;
   align-self: center;
+  text-align: center;
   width: 50%;
 }
 
 body main #new_features section p span {
   margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-family: "Sunflower", normal;
+  color: #977C7C;
   font-style: italic;
 }
 
@@ -248,25 +258,34 @@ body main #design {
 body main #design #design_points {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 60%;
 }
 
-body main #design #design_points ul {
-  margin-bottom: 2rem;
+body main #design #design_points div {
+  width: inherit;
 }
 
-body main #design #design_points ul p {
+body main #design #design_points div p {
   margin: 0;
+  font-size: 1.5rem;
 }
 
-body main #design #design_points ul li {
-  list-style-position: inside;
+body main #design #design_points div ul {
+  padding-left: 1em;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+body main #design #design_points div ul li {
+  list-style-position: outside;
 }
 
 body main #design p {
-  width: 70%;
+  width: 60%;
   margin: 1rem auto;
+  font-size: 1.5rem;
 }
 
 body main #design .h4_heading {

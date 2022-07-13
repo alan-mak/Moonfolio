@@ -75,15 +75,20 @@ body {
     justify-content: center;
     margin: 2rem auto;
     .button {
-      box-sizing: border-box;
-      border: 1px solid $colourbutton2;
-      color: $colourbuttonfont2;
-      font-family: $font4;
-      border-radius: 75px;
-      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-      text-decoration: none;
+      padding: 9px 15px;
       font-size: $h4size;
-      padding: 1rem;
+      color: $colour2;
+      border: 2px solid $colour2;
+      border-radius: 10px;
+      width: fit-content;
+      float: right;
+      text-decoration: none;
+      margin-top: -10px;
+    }
+    .button:hover {
+      transition: all 1s;
+      background-color: $colour2;
+      color: $background;
     }
   }
 
@@ -196,51 +201,63 @@ body {
         }
       }
     }
-      #new_features {
-        width: 70%;
-        margin: 2rem auto;
-        section {
-          display: flex;
-          justify-content: center;
-          gap: 3rem;
-          margin: 1rem;
-          img {
-            max-width: 25%;
-          }
-          p {
-            font-family: $font3;
-            font-size: $h4size;
-            align-self: center;
-            width: 50%;
-            span {
-              margin-bottom: 2rem;
-              font-style: italic;
-            }
+    #new_features {
+      width: 70%;
+      margin: 2rem auto;
+      section {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin: 1rem;
+        img {
+          max-width: 25%;
+        }
+        p {
+          font-family: $font3;
+          font-size: $h4size;
+          align-self: center;
+          text-align: center;
+          width: 50%;
+          span {
+            margin-bottom: 2rem;
+            font-size: 1.75rem;
+            font-family: $font4;
+            color: $colour3;
+            font-style: italic;
           }
         }
       }
+    }
 
     #design {
       font-family: $font3;
       #design_points {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0 auto;
-        ul {
-          margin-bottom: 2rem;
+        width: 60%;
+        div {
+          width: inherit;
           p {
             margin: 0;
+            font-size: $h4size;
           }
-          li {
-            list-style-position: inside;
+          ul {
+            padding-left: 1em;
+            margin-bottom: 2rem;
+            font-size: $h4size;
+            li {
+              list-style-position: outside;
+            }
           }
         }
       }
 
       p {
-        width: 70%;
+        width: 60%;
         margin: 1rem auto;
+        font-size: $h4size;
       }
 
       .h4_heading {
