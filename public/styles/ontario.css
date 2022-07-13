@@ -97,9 +97,9 @@ body .button-container .button {
 }
 
 body .button-container .button:hover {
+  transition: all 1s;
   background-color: #756464;
   color: #FFFFFF;
-  transition: top 1s;
 }
 
 body main {
