@@ -295,17 +295,6 @@ body main #design .h4_heading {
   margin: 3rem auto;
 }
 
-body main #design #image_section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-body main #design #image_section img {
-  width: 20%;
-}
-
 body main #design img {
   width: 70%;
   display: block;
