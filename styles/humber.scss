@@ -41,25 +41,27 @@ body {
     text-align: end;
   }
 
-  .line {
-    border: $lineborder;
-    height: 0;
-    background-color: $colour3;
-    align-self: center;
-    margin: $linemargin;
-    width: $linewidth;
-  }
-
   .title {
     display: flex;
-    justify-content: start;
-    width: 100%;
-    margin: 0;
     h1 {
       font-size: $h1size;
       font-weight: 400;
       font-family: $font6;
+      margin: 2rem;
     }
+  }
+  .title::before {
+    content:"";
+    flex: 1 1;
+    border-bottom: 4px solid $colour3;
+    margin: auto;
+
+  }
+  .title::after {
+    content:"";
+    flex: 1 1;
+    border-bottom: 0px solid;
+    margin: auto;
   }
 
   .h3-section {
@@ -79,22 +81,31 @@ body {
   .button-container {
     display: flex;
     justify-content: center;
+    margin: 2rem auto;
     .button {
-      box-sizing: border-box;
-      border: 1px solid $colourbutton;
-      color: $colourbuttonfont;
-      border-radius: 75px;
-      text-decoration: none;
-      font-family: $font4;
+      padding: 9px 15px;
       font-size: $h4size;
-      padding: 1rem;
+      color: $colour2;
+      border: 2px solid $colour2;
+      border-radius: 10px;
+      width: fit-content;
+      float: right;
+      text-decoration: none;
+      margin-top: -10px;
+    }
+    .button:hover {
+      transition: all 1s;
+      background-color: $colour2;
+      color: $background;
     }
   }
+
   .fake-div {
     width: 70%;
     margin: 0 auto;
     p {
       font-family: $font3;
+      font-size: $h4size;
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -117,6 +128,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    div {
+      width: 101%;
+    }
 
     #project2 {
       display: flex;
@@ -161,16 +175,17 @@ body {
         margin: 0 auto;
         section {
           width: 45%;
+          font-size: $h4size;
 
           .detailTitle {
             text-transform: uppercase;
             margin-top: 1rem;
-            font-size: 1rem;
+            font-size: $h4size;
           }
           h2 {
             color: $colour3;
             font-family: $font4;
-            font-size: $h2size;
+            // font-size: $h2size;
           }
           p {
             font-family: $font3;
@@ -183,7 +198,7 @@ body {
             font-family: $font5;
             color: $colour4;
             font-weight: 400;
-            font-size: $h6size;
+            font-size: 1.4rem;
             margin: 0;
           }
         }
@@ -193,7 +208,8 @@ body {
     #image-gallery {
       div {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
@@ -231,10 +247,10 @@ body {
       section {
         font-family: $font3;
         font-weight: 400;
-        font-size: $h5size;
+        font-size: $h4size;
         margin: 1.5rem auto;
         span {
-          font-size: $h4size;
+          font-size: $h3size;
           color: $colour3;
           font-family: $font4;
         }
@@ -243,16 +259,17 @@ body {
     #design {
       .table {
         font-family: $font3;
+        font-size: $h4size;
         font-weight: 400;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
+        margin: 1rem auto;
         div {
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          width: 80%;
+          // width: 80%;
           .heading {
             width: 25%;
           }
@@ -277,6 +294,7 @@ body {
         display: flex;
         justify-content: space-evenly;
         font-family: $font3;
+        font-size: $h4size;
         width: 100%;
         ul {
           section {
@@ -300,6 +318,7 @@ body {
         section {
           width: 70%;
           margin: 0 auto;
+          font-size: $h4size;
         }
       }
       #guide {
