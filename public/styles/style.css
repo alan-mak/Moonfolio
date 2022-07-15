@@ -157,6 +157,12 @@ body main #highlights .button {
   margin-top: -10px;
 }
 
+body main #highlights .button:hover {
+  transition: all 0.5s;
+  background-color: #756464;
+  color: #FFFFFF;
+}
+
 @media only screen and (max-width: 768px) {
   .highlights-img {
     flex: 1 0 100%;

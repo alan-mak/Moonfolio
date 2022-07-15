@@ -14,6 +14,7 @@ html::-webkit-scrollbar {
 }
 
 body {
+  background-color: $background;
   header {
     nav {
       ul {
@@ -21,7 +22,6 @@ body {
       }
     }
   }
-  background-color: $background;
 
   .title-highlight {
     width: 20%;
@@ -66,7 +66,7 @@ body {
 
   .h3-section {
     width: 70%;
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
     color: $colour3;
     font-family: $font4;
     font-size: $h3size;
@@ -94,7 +94,7 @@ body {
       margin-top: -10px;
     }
     .button:hover {
-      transition: all 1s;
+      transition: all 0.5s;
       background-color: $colour2;
       color: $background;
     }
@@ -104,7 +104,8 @@ body {
     width: 70%;
     margin: 0 auto;
     p {
-      font-family: $font3;
+      font-family: $font5;
+      font-weight: 300;
       font-size: $h4size;
       margin-top: 0;
       margin-bottom: 0;
@@ -181,14 +182,18 @@ body {
             text-transform: uppercase;
             margin-top: 1rem;
             font-size: $h4size;
+            font-weight: 400;
+            text-decoration: underline;
           }
           h2 {
             color: $colour3;
             font-family: $font4;
-            // font-size: $h2size;
+            margin-bottom: 0;
           }
           p {
-            font-family: $font3;
+            margin-top: 0.5rem;
+            font-family: $font5;
+            font-weight: 300;
             span {
               color: $colour3;
               font-style: italic;
@@ -197,7 +202,7 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 400;
+            font-weight: 300;
             font-size: 1.4rem;
             margin: 0;
           }
@@ -208,14 +213,13 @@ body {
     #image-gallery {
       div {
         display: flex;
-        // flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        width: 100%;
         img {
-          max-width: 45%;
-  
+          width: 45%;
           margin: 1rem auto;
         }
       }
@@ -225,7 +229,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 auto;
+      width: 100%;
       div {
         div {
           display: flex;
@@ -245,31 +249,32 @@ body {
       }
 
       section {
-        font-family: $font3;
-        font-weight: 400;
+        font-family: $font5;
+        font-weight: 300;
         font-size: $h4size;
         margin: 1.5rem auto;
         span {
+          font-family: $font4;
+          font-weight: 400;
           font-size: $h3size;
           color: $colour3;
-          font-family: $font4;
         }
       }
     }
     #design {
       .table {
-        font-family: $font3;
+        font-family: $font5;
         font-size: $h4size;
-        font-weight: 400;
+        font-weight: 300;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 1rem auto;
+        width: 99%;
         div {
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          // width: 80%;
           .heading {
             width: 25%;
           }
@@ -277,7 +282,7 @@ body {
             width: 25%;
           }
           section {
-            font-weight: 400;
+            font-weight: 300;
             text-align: start;
             ol {
               li::marker {
@@ -293,7 +298,8 @@ body {
       article {
         display: flex;
         justify-content: space-evenly;
-        font-family: $font3;
+        font-family: $font5;
+        font-weight: 300;
         font-size: $h4size;
         width: 100%;
         ul {
@@ -309,14 +315,16 @@ body {
     }
     #define {
       div {
-        font-family: $font3;
+        font-family: $font5;
+        font-weight: 300;
+        width: 70%;
+        margin: 0 auto;
         img {
-          width: 70%;
+          width: 100%;
           display: block;
           margin: 1rem auto;
         }
         section {
-          width: 70%;
           margin: 0 auto;
           font-size: $h4size;
         }

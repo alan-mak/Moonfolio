@@ -37,7 +37,7 @@ body .title-highlight {
   font-family: "Signika Negative", normal;
   color: #616161;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: #E5E5E5;
   border: 15px solid #E5E5E5;
   border-top-right-radius: 25px;
@@ -76,10 +76,10 @@ body .title::after {
 
 body .h3-section {
   width: 70%;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
   color: #977C7C;
   font-family: "Sunflower", normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 body .list-style {
@@ -96,7 +96,7 @@ body .button-container {
 
 body .button-container .button {
   padding: 9px 15px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #756464;
   border: 2px solid #756464;
   border-radius: 10px;
@@ -107,7 +107,7 @@ body .button-container .button {
 }
 
 body .button-container .button:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   background-color: #756464;
   color: #FFFFFF;
 }
@@ -118,8 +118,9 @@ body .fake-div {
 }
 
 body .fake-div p {
-  font-family: "Sanchez", normal;
-  font-size: 1.5rem;
+  font-family: "Signika Negative", normal;
+  font-weight: 300;
+  font-size: 1.25rem;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -177,7 +178,7 @@ body main #project2 div h1 {
 body main #project2 div h2 {
   margin-top: 0;
   font-family: "Sanasation", normal;
-  font-size: 2.05rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -197,22 +198,27 @@ body main #info #summary {
 
 body main #info #summary section {
   width: 45%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 body main #info #summary section .detailTitle {
   text-transform: uppercase;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 body main #info #summary section h2 {
   color: #977C7C;
   font-family: "Sunflower", normal;
+  margin-bottom: 0;
 }
 
 body main #info #summary section p {
-  font-family: "Sanchez", normal;
+  margin-top: 0.5rem;
+  font-family: "Signika Negative", normal;
+  font-weight: 300;
 }
 
 body main #info #summary section p span {
@@ -223,7 +229,7 @@ body main #info #summary section p span {
 body main #info #summary section h6 {
   font-family: "Signika Negative", normal;
   color: #616161;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.4rem;
   margin: 0;
 }
@@ -234,10 +240,11 @@ body main #image-gallery div {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 body main #image-gallery div img {
-  max-width: 45%;
+  width: 45%;
   margin: 1rem auto;
 }
 
@@ -245,7 +252,7 @@ body main #features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  width: 100%;
 }
 
 body main #features div div {
@@ -267,26 +274,28 @@ body main #features div #bigger-img {
 }
 
 body main #features section {
-  font-family: "Sanchez", normal;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-family: "Signika Negative", normal;
+  font-weight: 300;
+  font-size: 1.25rem;
   margin: 1.5rem auto;
 }
 
 body main #features section span {
-  font-size: 2rem;
-  color: #977C7C;
   font-family: "Sunflower", normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #977C7C;
 }
 
 body main #design .table {
-  font-family: "Sanchez", normal;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: "Signika Negative", normal;
+  font-size: 1.25rem;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem auto;
+  width: 99%;
 }
 
 body main #design .table div {
@@ -304,7 +313,7 @@ body main #design .table div .result {
 }
 
 body main #design .table div section {
-  font-weight: 400;
+  font-weight: 300;
   text-align: start;
 }
 
@@ -319,8 +328,9 @@ body main #design .table div section ul {
 body main #design article {
   display: flex;
   justify-content: space-evenly;
-  font-family: "Sanchez", normal;
-  font-size: 1.5rem;
+  font-family: "Signika Negative", normal;
+  font-weight: 300;
+  font-size: 1.25rem;
   width: 100%;
 }
 
@@ -334,19 +344,21 @@ body main #design article ul li {
 }
 
 body main #define div {
-  font-family: "Sanchez", normal;
+  font-family: "Signika Negative", normal;
+  font-weight: 300;
+  width: 70%;
+  margin: 0 auto;
 }
 
 body main #define div img {
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 1rem auto;
 }
 
 body main #define div section {
-  width: 70%;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 body main #define #guide img {

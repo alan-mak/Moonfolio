@@ -142,6 +142,11 @@ body {
                 text-decoration: none;
                 margin-top: -10px;
             }
+            .button:hover {
+                transition: all 0.5s;
+                background-color: $colour2;
+                color: $background;
+            }
         }
     }
 }
