@@ -100,7 +100,7 @@ body .button-container .button {
 }
 
 body .button-container .button:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   background-color: #756464;
   color: #FFFFFF;
 }

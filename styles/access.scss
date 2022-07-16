@@ -1,16 +1,16 @@
 @import "constants.scss";
 
 html{
-    box-sizing: border-box;
-    overflow: scroll;
-    
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  box-sizing: border-box;
+  overflow: scroll;
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 html::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
@@ -44,25 +44,27 @@ body {
     }
   }
 
-  .line {
-    border: $lineborder;
-    height: 0;
-    background-color: $colour3;
-    align-self: center;
-    margin: $linemargin;
-    width: $linewidth;
-  }
-
   .title {
     display: flex;
-    justify-content: start;
-    width: 100%;
-    margin: 0;
     h1 {
       font-size: $h1size;
       font-weight: 400;
       font-family: $font6;
+      margin: 2rem;
     }
+  }
+  .title::before {
+    content:"";
+    flex: 1 1;
+    border-bottom: 4px solid $colour3;
+    margin: auto;
+
+  }
+  .title::after {
+    content:"";
+    flex: 1 1;
+    border-bottom: 0px solid;
+    margin: auto;
   }
 
   .h3-section {
@@ -76,16 +78,23 @@ body {
   .button-container {
     display: flex;
     justify-content: center;
+    margin: 2rem auto;
     .button {
-      box-sizing: border-box;
-      border: 1px solid $colourbutton3;
-      color: $colourbuttonfont3;
-      border-radius: 75px;
-      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-      text-decoration: none;
-      font-family: $font4;
+      padding: 9px 15px;
       font-size: $h4size;
-      padding: 1rem;
+      font-family: $font1;
+      color: $colour2;
+      border: 2px solid $colour2;
+      border-radius: 10px;
+      width: fit-content;
+      float: right;
+      text-decoration: none;
+      margin-top: -10px;
+    }
+    .button:hover {
+      transition: all 0.5s;
+      background-color: $colour2;
+      color: $background;
     }
   }
 
@@ -104,7 +113,7 @@ body {
     align-items: center;
 
     div {
-      width: 100%;
+      width: 101%;
     }
 
     #project4 {
@@ -152,20 +161,25 @@ body {
         section {
           width: 45%;
           display: flex;
+          font-size: $h4size;
           flex-direction: column;
           
           .detailTitle {
             text-transform: uppercase;
-            margin-top: 1rem;
-            font-size: 1rem;
+            margin-top: 1rem;         
+            font-size: $h4size;
+            font-weight: 400;
+            text-decoration: underline;
           }
           h2 {
             color: $colour3;
             font-family: $font4;
-            font-size: $h2size;
+            margin-bottom: 0;
           }
           p {
-            font-family: $font3;
+            margin-top: 0.5rem;
+            font-family: $font5;
+            font-weight: 300;
             span {
               color: $colour3;
               font-style: italic;
@@ -174,8 +188,8 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 400;
-            font-size: $h6size;
+            font-weight: 300;
+            font-size: 1.4rem;
             margin: 0;
           }
         }
@@ -203,13 +217,15 @@ body {
             max-width: 25%;
           }
           p {
-            font-family: $font3;
-            font-size: $h4size;
+            font-family: $font5;
+            font-weight: 300;
+            font-size: $h3size;
             align-self: center;
             width: 50%;
             span {
               margin-bottom: 2rem;
               font-style: italic;
+              font-weight: 400;
             }
           }
         }
@@ -243,15 +259,18 @@ body {
         justify-content: center;
         width: 70%;
         margin: 0 auto;
+        font-family: $font5;
         ul {
           width: 30%;
           margin: 1rem auto;
+          font-size: $h4size;
           p {
             margin-bottom: 0;
             margin-top: 1rem;
-            font-weight: 800;
+            font-weight: 400;
           }
           li {
+            font-weight: 300;
             list-style-position: inside;
           }
         }
