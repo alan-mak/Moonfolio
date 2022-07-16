@@ -96,6 +96,7 @@ body .button-container {
 
 body .button-container .button {
   padding: 9px 15px;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: #756464;
   border: 2px solid #756464;
