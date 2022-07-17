@@ -213,6 +213,7 @@ body main #info #summary section .detailTitle {
 body main #info #summary section h2 {
   color: #977C7C;
   font-family: "Sunflower", normal;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
