@@ -69,7 +69,7 @@ body {
 
   .h3-section {
     width: 70%;
-    margin: 3rem auto 0 auto;
+    margin: 0 auto;
     color: $colour3;
     font-family: $font4;
     font-size: $h3size;
@@ -212,7 +212,7 @@ body {
         section {
           display: flex;
           justify-content: center;
-          gap: 3rem;
+          gap: 4rem;
           margin: 1rem;
           img {
             max-width: 25%;
@@ -220,13 +220,17 @@ body {
           p {
             font-family: $font5;
             font-weight: 300;
-            font-size: $h3size;
+            font-size: $h4size;
             align-self: center;
+            text-align: center;
             width: 50%;
             span {
               margin-bottom: 2rem;
+              font-size: 1.75rem;
+              font-family: $font5;
+              font-weight: 600;
+              color: $colour3;
               font-style: italic;
-              font-weight: 400;
             }
           }
         }

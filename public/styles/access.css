@@ -79,7 +79,7 @@ body .title::after {
 
 body .h3-section {
   width: 70%;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto;
   color: #977C7C;
   font-family: "Sunflower", normal;
   font-size: 1.5rem;
@@ -235,7 +235,7 @@ body main #prototype #new_features {
 body main #prototype #new_features section {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 4rem;
   margin: 1rem;
 }
 
@@ -246,15 +246,19 @@ body main #prototype #new_features section img {
 body main #prototype #new_features section p {
   font-family: "Signika Negative", normal;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   align-self: center;
+  text-align: center;
   width: 50%;
 }
 
 body main #prototype #new_features section p span {
   margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-family: "Signika Negative", normal;
+  font-weight: 600;
+  color: #977C7C;
   font-style: italic;
-  font-weight: 400;
 }
 
 body main #design {
