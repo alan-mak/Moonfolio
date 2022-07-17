@@ -195,6 +195,7 @@ body main #info #summary section h2 {
   color: #977C7C;
   font-family: "Sunflower", normal;
   margin-bottom: 0;
+  font-size: 2rem;
 }
 
 body main #info #summary section p {
@@ -286,28 +287,36 @@ body main #design #brainstorm div img {
 
 body main #design #design_points {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 70%;
   margin: 0 auto;
   font-family: "Signika Negative", normal;
 }
 
-body main #design #design_points ul {
-  width: 30%;
-  margin: 1rem auto;
-  font-size: 1.25rem;
+body main #design #design_points #firstColumn {
+  flex: 4;
 }
 
-body main #design #design_points ul p {
+body main #design #design_points #secondColumn {
+  flex: 2;
+}
+
+body main #design #design_points .fakeDiv p {
   margin-bottom: 0;
   margin-top: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
-body main #design #design_points ul li {
+body main #design #design_points .fakeDiv ul {
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  padding-left: 1em;
+}
+
+body main #design #design_points .fakeDiv ul li {
   font-weight: 300;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 body main #define img {

@@ -175,6 +175,7 @@ body {
             color: $colour3;
             font-family: $font4;
             margin-bottom: 0;
+            font-size: $h2size;
           }
           p {
             margin-top: 0.5rem;
@@ -255,23 +256,31 @@ body {
       }
       #design_points {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         width: 70%;
         margin: 0 auto;
         font-family: $font5;
-        ul {
-          width: 30%;
-          margin: 1rem auto;
-          font-size: $h4size;
+        #firstColumn {
+          flex: 4;
+        }
+        #secondColumn {
+          flex: 2;
+        }
+        .fakeDiv {
           p {
             margin-bottom: 0;
             margin-top: 1rem;
+            font-size: $h4size;
             font-weight: 400;
           }
-          li {
-            font-weight: 300;
-            list-style-position: inside;
+          ul {
+            margin: 1rem auto;
+            font-size: $h4size;
+            padding-left: 1em;
+            li {
+              font-weight: 300;
+              list-style-position: outside;
+            }
           }
         }
       }
