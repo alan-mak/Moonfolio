@@ -23,7 +23,7 @@ body {
   }
   
   .title-highlight {
-    width: 20%;
+    width: $width2;
     align-items: flex-start;
     font-family: $font5;
     color: $colour4;
@@ -47,7 +47,7 @@ body {
     display: flex;
     h1 {
       font-size: $h1size;
-      font-weight: 400;
+      font-weight: $weighttitle;
       font-family: $font6;
       margin: 2rem;
     }
@@ -67,7 +67,7 @@ body {
   }
 
   .h3-section {
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
     color: $colour3;
     font-family: $font4;
@@ -133,7 +133,7 @@ body {
           margin-top: 0;
           font-family: $font7;
           font-size: $h1size;
-          font-weight: 400;
+          font-weight: $weighttitle;
         }
       }
     }
@@ -144,7 +144,7 @@ body {
 
     #info {
       #summary {
-        width: 70%;
+        width: $width7;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -159,7 +159,7 @@ body {
             text-transform: uppercase;
             margin-top: 1rem;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
             text-decoration: underline;
           }
           h2 {
@@ -171,7 +171,7 @@ body {
           p {
             margin-top: 0.5rem;
             font-family: $font5;
-            font-weight: 300;
+            font-weight: $weightregular;
             span {
               color: $colour3;
               font-style: italic;
@@ -180,7 +180,7 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 300;
+            font-weight: $weightregular;
             font-size: 1.4rem;
             margin: 0;
           }
@@ -191,13 +191,13 @@ body {
     #image-gallery {
       #image-cart {
         display: flex;
-        width: 70%;
+        width: $width7;
         margin: 0 auto;
         gap: 2rem;
         div {
           display: flex;
           flex-direction: column;
-          width: 50%;
+          width: $width5;
           justify-content: space-between;
           img {
             margin-top: 3vh;
@@ -208,13 +208,13 @@ body {
     }
     #design {
       font-family: $font5;
-      font-weight: 300;
+      font-weight: $weightregular;
       #design_points {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
-        width: 70%;
+        width: $width7;
         #design1 {
           flex: 4;
         }
@@ -229,7 +229,7 @@ body {
           p {
             margin: 0;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
           }
           ul {
             padding-left: 1em;
@@ -245,8 +245,8 @@ body {
         display: flex;
         justify-content: flex-start;
         font-family: $font5;
-        font-weight: 300;
-        width: 70%;
+        font-weight: $weightregular;
+        width: $width7;
         flex-direction: column;
         margin: 0 auto;
         h3 {
@@ -258,21 +258,21 @@ body {
           gap: 2rem;
           margin-bottom: 5rem;
           img {
-            max-width: 60%;
+            max-width: $width6;
             margin-top: 3vh;
           }
           #line1 {
-            margin-left: -10%;
+            margin-left: -$width1;
           }
           #card2 {
             margin-top: -25%;
           }
           #line2 {
-            margin-right: -10%;
+            margin-right: -$width1;
           }
           h3 {
             font-family: $font4;
-            font-weight: 400;
+            font-weight: $weighttitle;
             font-size: $h3size;
           }
           #card-caption {
@@ -284,18 +284,18 @@ body {
     #define {
       display: flex;
       flex-direction: column;
-      width: 70%;
+      width: $width7;
       margin: 1rem auto 5rem auto;
       img {
         align-self: center;
-        max-width: 100%;
+        max-width: $width;
       }
     }
     
     #ideate {
       section {
         margin: 0 auto;
-        width: 70%;
+        width: $width7;
         img {
           display: flex;
           width: 84%;
@@ -308,7 +308,7 @@ body {
           margin: 0 auto;
           #moodBoard {
             margin-top: 3rem;
-            width: 40%;
+            width: $width4;
           }
           .wrapimg {
             text-align: left;
@@ -317,7 +317,7 @@ body {
           h5 {
             font-family: $font3;
             font-size: $h5size;
-            font-weight: 400;
+            font-weight: $weighttitle;
             width: $boozyideatewidth;
             float: left;
             color: $colour2;

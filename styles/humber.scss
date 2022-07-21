@@ -24,7 +24,7 @@ body {
   }
 
   .title-highlight {
-    width: 20%;
+    width: $width2;
     align-items: flex-start;
     font-family: $font5;
     color: $colour4;
@@ -45,7 +45,7 @@ body {
     display: flex;
     h1 {
       font-size: $h1size;
-      font-weight: 400;
+      font-weight: $weighttitle;
       font-family: $font6;
       margin: 2rem;
     }
@@ -65,7 +65,7 @@ body {
   }
 
   .h3-section {
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
     color: $colour3;
     font-family: $font4;
@@ -102,22 +102,22 @@ body {
   }
 
   .fake-div {
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
     p {
       font-family: $font5;
-      font-weight: 300;
+      font-weight: $weightregular;
       font-size: $h4size;
       margin-top: 0;
       margin-bottom: 0;
     }
     img {
-      width: 50%;
+      width: $width5;
       display: block;
       margin: 0 auto;
     }
     #affinity {
-      width: 100%;
+      width: $width;
     }
   }
 
@@ -140,7 +140,7 @@ body {
       justify-content: center;
       gap: 2rem;
       img {
-        max-width: 30%;
+        max-width: $width3;
       }
       div {
         flex-direction: column;
@@ -157,7 +157,7 @@ body {
           margin-top: 0;
           font-family: $font7;
           font-size: $h2size;
-          font-weight: 400;
+          font-weight: $weighttitle;
         }
       }
     }
@@ -170,7 +170,7 @@ body {
 
     #info {
       #summary {
-        width: 70%;
+        width: $width7;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -183,7 +183,7 @@ body {
             text-transform: uppercase;
             margin-top: 1rem;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
             text-decoration: underline;
           }
           h2 {
@@ -195,7 +195,7 @@ body {
           p {
             margin-top: 0.5rem;
             font-family: $font5;
-            font-weight: 300;
+            font-weight: $weightregular;
             span {
               color: $colour3;
               font-style: italic;
@@ -204,7 +204,7 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 300;
+            font-weight: $weightregular;
             font-size: 1.4rem;
             margin: 0;
           }
@@ -219,7 +219,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 100%;
+        width: $width;
         img {
           width: 45%;
           margin: 1rem auto;
@@ -231,7 +231,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: $width;
       div {
         div {
           display: flex;
@@ -244,7 +244,7 @@ body {
           }
         }
         #bigger-img {
-          max-width: 60%;
+          max-width: $width6;
           display: block;
           margin: 1.5rem auto;
         }
@@ -252,12 +252,12 @@ body {
 
       section {
         font-family: $font5;
-        font-weight: 300;
+        font-weight: $weightregular;
         font-size: $h4size;
         margin: 1.5rem auto;
         span {
           font-family: $font4;
-          font-weight: 400;
+          font-weight: $weighttitle;
           font-size: $h3size;
           color: $colour3;
         }
@@ -267,7 +267,7 @@ body {
       .table {
         font-family: $font5;
         font-size: $h4size;
-        font-weight: 300;
+        font-weight: $weightregular;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -284,7 +284,7 @@ body {
             width: 25%;
           }
           section {
-            font-weight: 300;
+            font-weight: $weightregular;
             text-align: start;
             ol {
               li::marker {
@@ -301,9 +301,9 @@ body {
         display: flex;
         justify-content: space-evenly;
         font-family: $font5;
-        font-weight: 300;
+        font-weight: $weightregular;
         font-size: $h4size;
-        width: 100%;
+        width: $width;
         ul {
           section {
             justify-content: start;
@@ -318,11 +318,11 @@ body {
     #define {
       div {
         font-family: $font5;
-        font-weight: 300;
-        width: 70%;
+        font-weight: $weightregular;
+        width: $width7;
         margin: 0 auto;
         img {
-          width: 100%;
+          width: $width;
           display: block;
           margin: 1rem auto;
         }
@@ -333,7 +333,7 @@ body {
       }
       #guide {
         img {
-          width: 40%;
+          width: $width4;
         }
       }
     }

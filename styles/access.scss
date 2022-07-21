@@ -24,7 +24,7 @@ body {
   }
 
   .title-highlight {
-    width: 20%;
+    width: $width2;
     align-items: flex-start;
     font-family: $font5;
     color: $colour4;
@@ -48,7 +48,7 @@ body {
     display: flex;
     h1 {
       font-size: $h1size;
-      font-weight: 400;
+      font-weight: $weighttitle;
       font-family: $font6;
       margin: 2rem;
     }
@@ -68,7 +68,7 @@ body {
   }
 
   .h3-section {
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
     color: $colour3;
     font-family: $font4;
@@ -102,7 +102,7 @@ body {
     font-family: $font4;
     font-size: $h4size;
     color: #29A0DA;
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
   }
 
@@ -122,7 +122,7 @@ body {
       justify-content: center;
       gap: 2rem;
       img {
-        max-width: 10%;
+        max-width: $width1;
       }
       div {
         flex-direction: column;
@@ -139,7 +139,7 @@ body {
           margin-top: 0;
           font-family: $font7;
           font-size: $h2size;
-          font-weight: 400;
+          font-weight: $weighttitle;
         }
       }
     }
@@ -153,7 +153,7 @@ body {
     
     #info {
       #summary {
-        width: 70%;
+        width: $width7;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -168,7 +168,7 @@ body {
             text-transform: uppercase;
             margin-top: 1rem;         
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
             text-decoration: underline;
           }
           h2 {
@@ -180,7 +180,7 @@ body {
           p {
             margin-top: 0.5rem;
             font-family: $font5;
-            font-weight: 300;
+            font-weight: $weightregular;
             span {
               color: $colour3;
               font-style: italic;
@@ -189,7 +189,7 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 300;
+            font-weight: $weightregular;
             font-size: 1.4rem;
             margin: 0;
           }
@@ -203,11 +203,11 @@ body {
         justify-content: space-evenly;
         margin: 2rem auto;
         img {
-          width: 20%;
+          width: $width2;
         }
       }
       #new_features {
-        width: 70%;
+        width: $width7;
         margin: 2rem auto;
         section {
           display: flex;
@@ -219,11 +219,11 @@ body {
           }
           p {
             font-family: $font5;
-            font-weight: 300;
+            font-weight: $weightregular;
             font-size: $h4size;
             align-self: center;
             text-align: center;
-            width: 50%;
+            width: $width5;
             span {
               margin-bottom: 2rem;
               font-size: 1.75rem;
@@ -242,12 +242,12 @@ body {
       img {
         display: block;
         margin: 0 auto;
-        width: 70%;
+        width: $width7;
       }
       #brainstorm {
         margin: 1rem auto;
         img {
-          width: 70%;
+          width: $width7;
         }
         div {
           display: flex;
@@ -261,7 +261,7 @@ body {
       #design_points {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: $width7;
         margin: 0 auto;
         font-family: $font5;
         #firstColumn {
@@ -275,14 +275,14 @@ body {
             margin-bottom: 0;
             margin-top: 1rem;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
           }
           ul {
             margin: 1rem auto;
             font-size: $h4size;
             padding-left: 1em;
             li {
-              font-weight: 300;
+              font-weight: $weightregular;
               list-style-position: outside;
             }
           }
@@ -292,12 +292,12 @@ body {
 
     #define {
       img {
-        width: 70%;
+        width: $width7;
         display: block;
         margin: 1rem auto;
       }
       #analysis {
-        width: 80%;
+        width: $width8;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -314,10 +314,10 @@ body {
           display: flex;
           flex-direction: column;
           justify-content:flex-start;
-          width: 100%;
+          width: $width;
           img {
             margin: 0 auto;
-            width: 70%;
+            width: $width7;
             display: block;
             align-self: flex-start;
           }
