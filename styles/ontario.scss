@@ -24,7 +24,7 @@ body {
   }
 
   .title-highlight {
-    width: 20%;
+    width: $width2;
     align-items: flex-start;
     font-family: $font5;
     color: $colour4;
@@ -45,7 +45,7 @@ body {
     display: flex;
     h1 {
       font-size: $h1size;
-      font-weight: 400;
+      font-weight: $weighttitle;
       font-family: $font6;
       margin: 2rem;
     }
@@ -65,7 +65,7 @@ body {
   }
 
   .h3-section {
-    width: 70%;
+    width: $width7;
     margin: 0 auto;
     color: $colour3;
     font-family: $font4;
@@ -130,7 +130,7 @@ body {
           margin-top: 0;
           font-family: $font7;
           font-size: $h2size;
-          font-weight: 400;
+          font-weight: $weighttitle;
         }
       }
     }
@@ -144,7 +144,7 @@ body {
 
     #info {
       #summary {
-        width: 70%;
+        width: $width7;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -159,7 +159,7 @@ body {
             text-transform: uppercase;
             margin-top: 1rem;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
             text-decoration: underline;
           }
           h2 {
@@ -171,7 +171,7 @@ body {
           p {
             margin-top: 0.5rem;
             font-family: $font5;
-            font-weight: 300;
+            font-weight: $weightregular;
             span {
               color: $colour3;
               font-style: italic;
@@ -180,7 +180,7 @@ body {
           h6 {
             font-family: $font5;
             color: $colour4;
-            font-weight: 300;
+            font-weight: $weightregular;
             font-size: 1.4rem;
             margin: 0;
           }
@@ -204,12 +204,12 @@ body {
         justify-content: space-evenly;
         margin: 2rem auto;
         img {
-          width: 20%;
+          width: $width2;
         }
       }
     }
     #new_features {
-      width: 70%;
+      width: $width7;
       margin: 2rem auto;
       section {
         display: flex;
@@ -221,11 +221,11 @@ body {
         }
         p {
           font-family: $font5;
-          font-weight: 300;
+          font-weight: $weightregular;
           font-size: $h4size;
           align-self: center;
           text-align: center;
-          width: 50%;
+          width: $width5;
           span {
             margin-bottom: 2rem;
             font-size: 1.75rem;
@@ -240,19 +240,19 @@ body {
 
     #design {
       font-family: $font5;
-      font-weight: 300;
+      font-weight: $weightregular;
       #design_points {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
-        width: 60%;
+        width: $width6;
         div {
           width: inherit;
           p {
             margin: 0;
             font-size: $h4size;
-            font-weight: 400;
+            font-weight: $weighttitle;
           }
           ul {
             padding-left: 1em;
@@ -266,7 +266,7 @@ body {
       }
 
       p {
-        width: 70%;
+        width: $width7;
         margin: 1rem auto;
         font-size: $h4size;
       }
@@ -274,11 +274,11 @@ body {
       .h4_heading {
         font-size: $h4size;
         color: $colour2;
-        width: 70%;
+        width: $width7;
         margin: 3rem auto;
       }
       img {
-        width: 70%;
+        width: $width7;
         display: block;
         margin: 1rem auto;
       }
