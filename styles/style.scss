@@ -76,6 +76,9 @@ body {
             position: relative;
             margin-top: -100px;
             z-index: 10;
+            #section1 {
+                margin-top: 5%;
+            }
 
             #highlights-title {
                 height: auto;
@@ -106,6 +109,9 @@ body {
             .highlights-img {
                 width: 50%;
                 border-radius: 15px;
+            }
+            .mobileLink {
+                display: none;
             }
 
             h2 {
@@ -151,15 +157,86 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .highlights-img {
-        flex: 1 0 100%;
-    }
+@media screen and (max-width: 428px) {
+    body {
+        header {
+            display: none;
+        }
+        main {
+            width: 100%;
+            #home-intro {
+                justify-content: start;
+                align-items: baseline;
+                flex-direction: column;
+                width: $width8;
+                margin: 0 auto;
+                #portfolio-picture {
+                    border-radius: $width5;
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                }
+                #div-block {
+                    display: none;
+                }
+                #home-intro-text {
+                    font-size: $h5size;
+                    h1 {
+                        font-size: $h5size;
+                        font-weight: 600;
+                    }
+                }
+            }
+            #highlights {
+                padding: 0;
+                margin-top: 0;
+                position: inherit;
+                #highlights-title {
+                    font-size: $h5size;
+                    width: 100%;
+                    margin: 0.5rem auto;
+                    text-align: center;
+                    align-self: center;
+                }
+                section {
+                    background: $background1;
 
-    .highlights-text {
-        flex: 1 0 100%;
-    }
-    #home-intro-text h1 {
-        font-size: 50px;
+                    .flex-container {
+                        flex-direction: column !important;
+                        a {
+                            display: block;
+                            .highlights-img {
+                                width: $width8;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        img {
+                            display: none;
+                        }
+                        
+                        .highlights-text {
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            h2 {
+                                font-size: $h5size;
+                                align-self: center;
+                                font-weight: 800;
+                            }
+                            h3 {
+                                font-size: $h5size;
+                            }
+                            .button {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                #section1 {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 }

@@ -90,6 +90,10 @@ body main #highlights {
   z-index: 10;
 }
 
+body main #highlights #section1 {
+  margin-top: 5%;
+}
+
 body main #highlights #highlights-title {
   height: auto;
   margin-top: -144px;
@@ -120,6 +124,10 @@ body main #highlights .flex-container .highlights-text {
 body main #highlights .highlights-img {
   width: 50%;
   border-radius: 15px;
+}
+
+body main #highlights .mobileLink {
+  display: none;
 }
 
 body main #highlights h2 {
@@ -163,14 +171,81 @@ body main #highlights .button:hover {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 768px) {
-  .highlights-img {
-    flex: 1 0 100%;
+@media screen and (max-width: 428px) {
+  body header {
+    display: none;
   }
-  .highlights-text {
-    flex: 1 0 100%;
+  body main {
+    width: 100%;
   }
-  #home-intro-text h1 {
-    font-size: 50px;
+  body main #home-intro {
+    justify-content: start;
+    align-items: baseline;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  body main #home-intro #portfolio-picture {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+  body main #home-intro #div-block {
+    display: none;
+  }
+  body main #home-intro #home-intro-text {
+    font-size: 1rem;
+  }
+  body main #home-intro #home-intro-text h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  body main #highlights {
+    padding: 0;
+    margin-top: 0;
+    position: inherit;
+  }
+  body main #highlights #highlights-title {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.5rem auto;
+    text-align: center;
+    align-self: center;
+  }
+  body main #highlights section {
+    background: #EEE6E6;
+  }
+  body main #highlights section .flex-container {
+    flex-direction: column !important;
+  }
+  body main #highlights section .flex-container a {
+    display: block;
+  }
+  body main #highlights section .flex-container a .highlights-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  body main #highlights section .flex-container img {
+    display: none;
+  }
+  body main #highlights section .flex-container .highlights-text {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body main #highlights section .flex-container .highlights-text h2 {
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 800;
+  }
+  body main #highlights section .flex-container .highlights-text h3 {
+    font-size: 1rem;
+  }
+  body main #highlights section .flex-container .highlights-text .button {
+    display: none;
+  }
+  body main #highlights #section1 {
+    margin-top: 0;
   }
 }
