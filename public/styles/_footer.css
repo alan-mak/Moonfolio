@@ -27,11 +27,39 @@ footer ul li {
 }
 
 footer ul li a {
+  text-decoration: none;
+  color: #977C7C;
+}
+
+footer ul li a p {
   margin: 0 40px;
   text-decoration: none;
   color: #1a1b1f;
 }
 
-footer ul li a:visited {
-  text-decoration: none;
+footer ul li a .fa-solid {
+  display: none;
+}
+
+footer ul li a .fa-brands {
+  display: none;
+}
+
+@media screen and (max-width: 428px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer ul li a {
+    text-decoration: none;
+  }
+  footer ul li a p {
+    display: none;
+  }
+  footer ul li a .fa-solid {
+    display: block;
+  }
+  footer ul li a .fa-brands {
+    display: block;
+  }
 }

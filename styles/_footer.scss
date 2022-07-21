@@ -16,12 +16,43 @@ footer {
       float: right;
       
       a {
-        margin: 0 40px;
         text-decoration: none;
-        color: $footer-colour;
+        color: $colour3;
+        p {
+          margin: 0 40px;
+          text-decoration: none;
+          color: $footer-colour;
+        }
+        
+        .fa-solid {
+          display: none;
+        }
+        .fa-brands {
+          display: none;
+        }
       }
-      a:visited {
-        text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  footer {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          text-decoration: none;
+          p {
+            display: none;
+          }
+          .fa-solid {
+            display: block;
+          }
+          .fa-brands {
+            display: block;
+          }
+        }
       }
     }
   }
