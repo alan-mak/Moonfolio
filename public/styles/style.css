@@ -172,10 +172,8 @@ body main #highlights .button:hover {
 }
 
 @media screen and (max-width: 428px) {
-  body header {
-    display: none;
-  }
   body main {
+    display: block;
     width: 100%;
   }
   body main #home-intro {

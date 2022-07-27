@@ -9,6 +9,10 @@ header {
       height: 10vh;
       margin: 0 auto;
       background-color: $background1;
+
+      .fa-bars {
+        display: none;
+      }
       
       li {
         list-style-type: none;
@@ -29,7 +33,54 @@ header {
       }
       li:hover {
         border-bottom: 5px solid $colour1;
+        cursor: pointer;
       }
     }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  header {
+    nav {
+      ul {
+        // background-color: $colour3;
+        padding: 0 2.5rem;
+
+        #home {
+          min-width: fit-content;
+        }
+        .fa-bars {
+          display: block;
+          padding: 1rem;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          text-align: end;
+          // width: inherit;
+          width: 100%;
+          .menu {
+            display: none;
+          }
+          .show {
+              display: block !important;
+
+              li {
+                padding: 1.5rem;
+                a {
+                  text-align: center;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: none !important;
+  }
+  footer {
+    display: none;
   }
 }

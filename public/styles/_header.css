@@ -17,6 +17,10 @@ header nav ul {
   background-color: #EEE6E6;
 }
 
+header nav ul .fa-bars {
+  display: none;
+}
+
 header nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -39,4 +43,42 @@ header nav ul #home {
 
 header nav ul li:hover {
   border-bottom: 5px solid #584b4b;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 428px) {
+  header nav ul {
+    padding: 0 2.5rem;
+  }
+  header nav ul #home {
+    min-width: fit-content;
+  }
+  header nav ul .fa-bars {
+    display: block;
+    padding: 1rem;
+  }
+  header nav ul div {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 100%;
+  }
+  header nav ul div .menu {
+    display: none;
+  }
+  header nav ul div .show {
+    display: block !important;
+  }
+  header nav ul div .show li {
+    padding: 1.5rem;
+  }
+  header nav ul div .show li a {
+    text-align: center;
+  }
+  main {
+    display: none !important;
+  }
+  footer {
+    display: none;
+  }
 }

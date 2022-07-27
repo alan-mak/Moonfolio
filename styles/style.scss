@@ -159,10 +159,8 @@ body {
 
 @media screen and (max-width: 428px) {
     body {
-        header {
-            display: none;
-        }
         main {
+            display: block;
             width: 100%;
             #home-intro {
                 justify-content: start;
