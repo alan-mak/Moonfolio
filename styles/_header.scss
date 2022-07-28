@@ -9,6 +9,10 @@ header {
       height: 10vh;
       margin: 0 auto;
       background-color: $background1;
+      
+      img {
+        display: none;
+      }
 
       .fa-bars {
         display: none;
@@ -41,46 +45,83 @@ header {
 
 @media screen and (max-width: 428px) {
   header {
-    nav {
+    .untoggle {
+      transition:all 1s;
       ul {
-        // background-color: $colour3;
-        padding: 0 2.5rem;
+        padding: 0;
 
         #home {
           min-width: fit-content;
         }
         .fa-bars {
           display: block;
-          padding: 1rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 20px 40px 11px 0;
         }
         div {
           display: flex;
           flex-direction: column;
           text-align: end;
-          // width: inherit;
           width: 100%;
           .menu {
             display: none;
           }
-          .show {
-              display: block !important;
+        }
+      }
+    }
 
-              li {
-                padding: 1.5rem;
-                a {
-                  text-align: center;
-                }
-              }
+    .toggle {
+      transition:all 1s;
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li {
+          padding: 1.5rem;
+          border-bottom: none;
+        }
+        #home {
+          display: flex;
+          justify-content: center;
+        }
+        div {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          li {
+            padding: 1.5rem;
+            width: fit-content;
+            a {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          #resume {
+            display: flex;
+            justify-content: center;
+          }
+      
+          img {
+            display: block;
+            border-radius: 200px 200px 0 0;
+            width: $width7;
+            object-fit: cover;
           }
         }
       }
     }
   }
-
-  main {
+  .mainPage {
     display: none !important;
   }
-  footer {
-    display: none;
+  
+  .footerPage {
+    display: none !important;
+  }
+
+  .back {
+    display: none !important;
   }
 }

@@ -17,6 +17,10 @@ header nav ul {
   background-color: #EEE6E6;
 }
 
+header nav ul img {
+  display: none;
+}
+
 header nav ul .fa-bars {
   display: none;
 }
@@ -47,38 +51,77 @@ header nav ul li:hover {
 }
 
 @media screen and (max-width: 428px) {
-  header nav ul {
-    padding: 0 2.5rem;
+  header .untoggle {
+    transition: all 1s;
   }
-  header nav ul #home {
+  header .untoggle ul {
+    padding: 0;
+  }
+  header .untoggle ul #home {
     min-width: fit-content;
   }
-  header nav ul .fa-bars {
+  header .untoggle ul .fa-bars {
     display: block;
-    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 40px 11px 0;
   }
-  header nav ul div {
+  header .untoggle ul div {
     display: flex;
     flex-direction: column;
     text-align: end;
     width: 100%;
   }
-  header nav ul div .menu {
+  header .untoggle ul div .menu {
     display: none;
   }
-  header nav ul div .show {
-    display: block !important;
+  header .toggle {
+    transition: all 1s;
   }
-  header nav ul div .show li {
+  header .toggle ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  header .toggle ul li {
     padding: 1.5rem;
+    border-bottom: none;
   }
-  header nav ul div .show li a {
-    text-align: center;
+  header .toggle ul #home {
+    display: flex;
+    justify-content: center;
   }
-  main {
+  header .toggle ul div {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  header .toggle ul div li {
+    padding: 1.5rem;
+    width: fit-content;
+  }
+  header .toggle ul div li a {
+    display: flex;
+    justify-content: center;
+  }
+  header .toggle ul div #resume {
+    display: flex;
+    justify-content: center;
+  }
+  header .toggle ul div img {
+    display: block;
+    border-radius: 200px 200px 0 0;
+    width: 70%;
+    object-fit: cover;
+  }
+  .mainPage {
     display: none !important;
   }
-  footer {
-    display: none;
+  .footerPage {
+    display: none !important;
+  }
+  .back {
+    display: none !important;
   }
 }
