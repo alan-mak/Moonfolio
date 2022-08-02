@@ -17,6 +17,10 @@ header {
       .fa-bars {
         display: none;
       }
+
+      .fa-xmark {
+        display: none;
+      }
       
       li {
         list-style-type: none;
@@ -52,6 +56,18 @@ header {
 
         #home {
           min-width: fit-content;
+          padding: 0;
+          margin-top: 0.5rem;
+          span {
+            display: none;
+          }
+          img {
+            display: block !important;
+            border-radius: $width5;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+          }
         }
         .fa-bars {
           display: block;
@@ -59,6 +75,9 @@ header {
           right: 0;
           top: 0;
           padding: 20px 40px 11px 0;
+        }
+        .fa-xmark {
+          display: none;
         }
         div {
           display: flex;
@@ -78,6 +97,17 @@ header {
         display: flex;
         flex-direction: column;
         padding: 0;
+        .fa-xmark {
+          display: block !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 20px 40px 11px 0;
+        }
+        .fa-bars {
+          display: none;
+        }
+
         li {
           padding: 1.5rem;
           border-bottom: none;
@@ -85,6 +115,14 @@ header {
         #home {
           display: flex;
           justify-content: center;
+          padding: 20px 40px;
+          margin-top: 0;
+          span {
+            display: block;
+          }
+          img {
+            display: none !important;
+          }
         }
         div {
           display: flex !important;

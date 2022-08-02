@@ -25,6 +25,10 @@ header nav ul .fa-bars {
   display: none;
 }
 
+header nav ul .fa-xmark {
+  display: none;
+}
+
 header nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -59,6 +63,18 @@ header nav ul li:hover {
   }
   header .untoggle ul #home {
     min-width: fit-content;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+  header .untoggle ul #home span {
+    display: none;
+  }
+  header .untoggle ul #home img {
+    display: block !important;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
   }
   header .untoggle ul .fa-bars {
     display: block;
@@ -66,6 +82,9 @@ header nav ul li:hover {
     right: 0;
     top: 0;
     padding: 20px 40px 11px 0;
+  }
+  header .untoggle ul .fa-xmark {
+    display: none;
   }
   header .untoggle ul div {
     display: flex;
@@ -84,6 +103,16 @@ header nav ul li:hover {
     flex-direction: column;
     padding: 0;
   }
+  header .toggle ul .fa-xmark {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 40px 11px 0;
+  }
+  header .toggle ul .fa-bars {
+    display: none;
+  }
   header .toggle ul li {
     padding: 1.5rem;
     border-bottom: none;
@@ -91,6 +120,14 @@ header nav ul li:hover {
   header .toggle ul #home {
     display: flex;
     justify-content: center;
+    padding: 20px 40px;
+    margin-top: 0;
+  }
+  header .toggle ul #home span {
+    display: block;
+  }
+  header .toggle ul #home img {
+    display: none !important;
   }
   header .toggle ul div {
     display: flex !important;
