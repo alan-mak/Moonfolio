@@ -25,3 +25,9 @@
 .navback a::visted {
   text-decoration: none;
 }
+
+@media screen and (max-width: 428px) {
+  .navback {
+    display: none;
+  }
+}
