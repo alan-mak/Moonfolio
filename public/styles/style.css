@@ -172,6 +172,9 @@ body main #highlights .button:hover {
 }
 
 @media screen and (max-width: 428px) {
+  body {
+    margin: 8px;
+  }
   body main {
     display: block;
     width: 100%;
