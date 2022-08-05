@@ -168,6 +168,10 @@ body main #project2 div {
   text-transform: uppercase;
 }
 
+body main #project2 div img {
+  display: none;
+}
+
 body main #project2 div h1 {
   margin-bottom: 0;
   font-family: "Sanasation", normal;
@@ -236,7 +240,7 @@ body main #info #summary section h6 {
   margin: 0;
 }
 
-body main #image-gallery div {
+body main #image-gallery div .gallery-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,31 +249,28 @@ body main #image-gallery div {
   width: 100%;
 }
 
-body main #image-gallery div img {
+body main #image-gallery div .gallery-item img {
   width: 45%;
   margin: 1rem auto;
 }
 
-body main #features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+body main #image-gallery div .gallery-item h5 {
+  display: none;
 }
 
-body main #features div div {
+body main #features .fake-div div {
   display: flex;
   justify-content: center;
 }
 
-body main #features div div img {
+body main #features .fake-div div img {
   display: block;
   align-self: center;
   max-width: 35%;
   margin: 1.5rem auto;
 }
 
-body main #features div #bigger-img {
+body main #features .fake-div #bigger-img {
   max-width: 60%;
   display: block;
   margin: 1.5rem auto;
@@ -363,6 +364,153 @@ body main #define div section {
   font-size: 1.25rem;
 }
 
-body main #define #guide img {
+body main #define .guide .gallery {
+  width: 100%;
+}
+
+body main #define .guide .gallery .style-guide {
   width: 40%;
+}
+
+body main #define .guide img {
+  width: 100%;
+}
+
+@media screen and (max-width: 428px) {
+  body .h3-section {
+    width: 90%;
+  }
+  body .title-highlight {
+    width: 95%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body main #project2 {
+    margin: 1rem auto;
+    gap: 0;
+  }
+  body main #project2 img {
+    display: none;
+  }
+  body main #project2 div {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body main #project2 div img {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.5rem;
+    object-fit: cover;
+    object-position: 0% 0;
+    vertical-align: text-bottom;
+  }
+  body main #project2 div h1 {
+    display: inline-block;
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  body main #project2 div h2 {
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  body main #info #summary {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  body main #info #summary section {
+    width: 100% !important;
+  }
+  body main #image-gallery .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    width: 90%;
+  }
+  body main #image-gallery .gallery .gallery-item {
+    text-align: center;
+    scroll-snap-align: start;
+    width: 350px;
+    gap: 0;
+  }
+  body main #image-gallery .gallery .gallery-item img {
+    width: 95%;
+    margin: 0.1rem;
+  }
+  body main #image-gallery .gallery .gallery-item h5 {
+    display: block;
+    font-family: "Sanchez", normal;
+    font-size: 1rem;
+    font-weight: 400;
+    width: inherit;
+    float: left;
+    color: #756464;
+    margin-bottom: 1rem;
+  }
+  body main #features .fake-div {
+    width: 90%;
+  }
+  body main #features .fake-div #bigger-img {
+    max-width: 100%;
+    width: 100%;
+  }
+  body main #features .fake-div div {
+    flex-direction: column;
+  }
+  body main #features .fake-div div img {
+    max-width: 100%;
+    width: 100%;
+  }
+  body main #design .table {
+    width: 90%;
+  }
+  body main #design .table div .heading {
+    width: 44%;
+  }
+  body main #design .table div .result {
+    width: 55%;
+  }
+  body main #design .fake-div {
+    width: 90%;
+  }
+  body main #design .fake-div img {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+  body main #design article {
+    flex-direction: column;
+  }
+  body main #define div {
+    width: 90%;
+  }
+  body main #define .guide .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    width: 90%;
+  }
+  body main #define .guide .gallery .style-guide {
+    width: 80%;
+  }
+  body main #define .guide img {
+    scroll-snap-align: start;
+    width: 80%;
+    margin-left: 1.5rem;
+  }
 }
