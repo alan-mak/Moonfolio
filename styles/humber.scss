@@ -390,13 +390,13 @@ body {
             margin: 0 auto;
             width: max-content;
             text-align: justify;
-            font-size: $h3size;
+            font-size: $h4size;
           }
           h2 {
             margin: 0 auto;
             width: max-content;
             text-align: justify;
-            font-size: $h3size;
+            font-size: $h4size;
           }
         }
       }
@@ -420,11 +420,11 @@ body {
           scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
           overflow-x: scroll;
-          width: $width9;
+          width: 95%;
           .gallery-item {
             text-align: center;
             scroll-snap-align: start;
-            width: 350px;
+            width: 325px;
             gap: 0;
             img {
               width: 95%;

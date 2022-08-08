@@ -414,13 +414,13 @@ body main #define .guide img {
     margin: 0 auto;
     width: max-content;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   body main #project2 div h2 {
     margin: 0 auto;
     width: max-content;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   body main #info #summary {
     flex-direction: column-reverse;
@@ -437,12 +437,12 @@ body main #define .guide img {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow-x: scroll;
-    width: 90%;
+    width: 95%;
   }
   body main #image-gallery .gallery .gallery-item {
     text-align: center;
     scroll-snap-align: start;
-    width: 350px;
+    width: 325px;
     gap: 0;
   }
   body main #image-gallery .gallery .gallery-item img {
