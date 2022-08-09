@@ -136,6 +136,10 @@ body main #project3 div {
   text-transform: uppercase;
 }
 
+body main #project3 div img {
+  display: none;
+}
+
 body main #project3 div h1 {
   margin-bottom: 0;
   font-family: "Sanasation", normal;
@@ -311,4 +315,110 @@ body main #design img {
   width: 70%;
   display: block;
   margin: 1rem auto;
+}
+
+@media screen and (max-width: 428px) {
+  body .h3-section {
+    width: 90%;
+  }
+  body .title-highlight {
+    width: 95%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body main #project3 {
+    margin: 1rem auto;
+    gap: 0;
+  }
+  body main #project3 img {
+    display: none;
+  }
+  body main #project3 div {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body main #project3 div img {
+    display: inline-block;
+    margin: 0;
+    vertical-align: text-bottom;
+  }
+  body main #project3 div h1 {
+    display: inline-block;
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  body main #project3 div h2 {
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  body main #info #summary {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  body main #info #summary section {
+    width: 100% !important;
+  }
+  body main #demo {
+    display: flex;
+    flex-direction: column;
+  }
+  body main #demo iframe {
+    width: 360px;
+    height: 240px;
+    margin: 0 auto;
+  }
+  body main #prototype #hifi {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    width: 325px;
+  }
+  body main #prototype #hifi img {
+    scroll-snap-align: start;
+    padding: 0.5rem;
+    width: 75%;
+  }
+  body main #features #new_features {
+    width: 90%;
+  }
+  body main #features #new_features img {
+    max-width: inherit;
+    margin-bottom: 0.5rem;
+  }
+  body main #features #new_features section {
+    font-size: 1.25rem;
+    width: 100%;
+    gap: 0;
+    flex-direction: column-reverse !important;
+    margin: 0;
+  }
+  body main #features #new_features p {
+    width: inherit;
+  }
+  body main #design #design_points {
+    flex-direction: column;
+    width: 90%;
+  }
+  body main #design #design_points div {
+    width: fit-content !important;
+  }
+  body main #design p {
+    width: 90%;
+  }
+  body main #design img {
+    width: 90%;
+  }
 }

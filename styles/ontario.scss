@@ -119,6 +119,9 @@ body {
         flex-direction: column;
         width: auto;
         text-transform: uppercase;
+        img {
+          display: none;
+        }
         h1 {
           margin-bottom: 0;
           font-family: $font7;
@@ -281,6 +284,133 @@ body {
         width: $width7;
         display: block;
         margin: 1rem auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  body {
+    .h3-section {
+      width: $width9;
+    }
+
+    .title-highlight {
+      width: 95%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    main {
+      #project3 {
+        margin: 1rem auto;
+        gap: 0;
+        img {
+          display: none;
+        }
+        div {
+          display: inline-block;
+          width: $width9;
+          margin: 0 auto;
+          text-align: center;
+          img {
+            display: inline-block;
+            margin: 0;
+            vertical-align: text-bottom;
+          }
+          h1 {
+            display: inline-block;
+            margin: 0 auto;
+            width: max-content;
+            text-align: justify;
+            font-size: $h4size;
+          }
+          h2 {
+            margin: 0 auto;
+            width: max-content;
+            text-align: justify;
+            font-size: $h4size;
+          }
+        }
+      }
+
+      #info {
+        #summary {
+          flex-direction: column-reverse;
+          width: $width9;
+          section {
+            width: $width !important;
+          }
+        }
+      }
+
+      #demo {
+        display: flex;
+        flex-direction: column;
+  
+        iframe {
+          width: 360px;
+          height: 240px;
+          margin: 0 auto;
+        }
+      }
+
+      #prototype {
+        #hifi {
+          display: flex;
+          justify-content: start;
+          flex-wrap: nowrap;
+          margin-right: 0;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          overflow-x: scroll;
+          width: 325px;
+          img {
+            scroll-snap-align: start;
+            padding: 0.5rem;
+            width: 75%;
+          }
+        }
+      }
+
+      #features {
+        #new_features {
+          width: $width9;
+          img {
+            max-width: inherit;
+            margin-bottom: 0.5rem;
+          }
+          section {
+            font-size: $h4size;
+            width: $width;
+            gap: 0;
+            flex-direction: column-reverse !important;
+            margin: 0;
+          }
+
+          p {
+            width: inherit;
+          }
+        }
+      }
+
+      #design {
+        #design_points {
+          flex-direction: column;
+          width: $width9;
+          div {
+            width: fit-content !important;
+          }
+        }
+        p {
+          width: $width9;
+        }
+        img {
+          width: $width9;
+        }
       }
     }
   }
