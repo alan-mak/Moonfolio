@@ -379,9 +379,9 @@ body {
       #features {
         #new_features {
           width: $width9;
-          img {
-            max-width: inherit;
-            margin-bottom: 0.5rem;
+          img {              
+            max-width: $width9;
+            margin: 0 auto 0.5rem auto;
           }
           section {
             font-size: $h4size;

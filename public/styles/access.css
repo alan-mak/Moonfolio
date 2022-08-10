@@ -472,8 +472,8 @@ body main #define #persona #userFlow img {
     margin-top: 2rem;
   }
   body main #prototype #new_features section img {
-    max-width: inherit;
-    margin-bottom: 0.5rem;
+    max-width: 90%;
+    margin: 0 auto 0.5rem auto;
   }
   body main #prototype #new_features section p {
     width: inherit;
