@@ -161,6 +161,10 @@ body main #project4 div h2 {
   font-weight: 400;
 }
 
+body main #project4 div img {
+  display: none;
+}
+
 body main #accessnow {
   width: 84%;
   max-height: 20%;
@@ -349,12 +353,183 @@ body main #define #persona #userFlow {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+body main #define #persona #userFlow .top-box {
+  font-family: "Signika Negative", normal;
+  font-size: 1.25rem;
+  display: flex;
+  margin: 1rem 0;
+}
+
+body main #define #persona #userFlow .top-box h3 {
+  display: inline-block;
+  align-self: start;
+  background-color: #249BED;
+  padding: 0.5rem 3rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+body main #define #persona #userFlow .top-box p {
+  align-self: center;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 1rem;
+  font-weight: 300;
+  width: 45%;
+  border: 1px solid #249BED;
+  border-left: 15px solid #249BED;
+  border-radius: 10px;
 }
 
 body main #define #persona #userFlow img {
-  margin: 0 auto;
-  width: 70%;
+  margin: 2rem auto;
+  width: 90%;
   display: block;
   align-self: flex-start;
+}
+
+@media screen and (max-width: 428px) {
+  body .h3-section {
+    width: 90%;
+  }
+  body .title-highlight {
+    width: 95%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body .h4-section {
+    width: 90%;
+  }
+  body main #project4 {
+    margin: 1rem auto;
+    gap: 0;
+  }
+  body main #project4 img {
+    display: none;
+  }
+  body main #project4 div {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body main #project4 div img {
+    display: inline-block;
+    margin: 0;
+    vertical-align: text-bottom;
+  }
+  body main #project4 div h1 {
+    display: inline-block;
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  body main #project4 div h2 {
+    margin: 0 auto;
+    width: max-content;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  body main #info #summary {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  body main #info #summary section {
+    width: 100% !important;
+  }
+  body main #prototype #hifi {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    width: 325px;
+  }
+  body main #prototype #hifi img {
+    scroll-snap-align: start;
+    padding: 0.5rem;
+    width: 75%;
+  }
+  body main #prototype #new_features {
+    width: 90%;
+  }
+  body main #prototype #new_features section {
+    font-size: 1.25rem;
+    width: 100%;
+    gap: 0;
+    flex-direction: column-reverse !important;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  body main #prototype #new_features section img {
+    max-width: inherit;
+    margin-bottom: 0.5rem;
+  }
+  body main #prototype #new_features section p {
+    width: inherit;
+  }
+  body main #design img {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  body main #design #brainstorm img {
+    width: 90%;
+  }
+  body main #design #design_points {
+    flex-direction: column;
+    width: 90%;
+  }
+  body main #define #analysis {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    width: 90%;
+  }
+  body main #define #analysis div {
+    justify-content: initial;
+    width: max-content;
+  }
+  body main #define #analysis div img {
+    scroll-snap-align: start;
+    width: 300px;
+  }
+  body main #define #persona img {
+    width: 90%;
+  }
+  body main #define #persona #userFlow {
+    width: 90%;
+  }
+  body main #define #persona #userFlow img {
+    width: 100%;
+  }
+  body main #define #persona #userFlow .top-box {
+    color: #249BED;
+  }
+  body main #define #persona #userFlow .top-box h3 {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    align-self: flex-start;
+  }
+  body main #define #persona #userFlow .top-box p {
+    border: 0px solid !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

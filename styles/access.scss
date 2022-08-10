@@ -141,6 +141,9 @@ body {
           font-size: $h2size;
           font-weight: $weighttitle;
         }
+        img {
+          display: none;
+        }
       }
     }
 
@@ -314,15 +317,210 @@ body {
           display: flex;
           flex-direction: column;
           justify-content:flex-start;
-          width: $width;
+          width: $width7;
+          margin: 0 auto;
+          .top-box {
+            font-family: $font5;
+            font-size: $h4size;
+            display: flex;
+            margin: 1rem 0;
+            h3 {
+              display: inline-block;
+              align-self: start;
+              background-color: #249BED;
+              padding: 0.5rem 3rem;
+              margin: 0;
+              font-weight: $weighttitle;
+            }
+            p {
+              align-self: center;
+              padding: 0.5rem;
+              padding-bottom: 1.5rem;
+              margin: 0 1rem;
+              font-weight: $weightregular;
+              width: 45%;
+              border: 1px solid #249BED;
+              border-left: 15px solid #249BED;
+              border-radius: 10px;
+            }
+          }
           img {
-            margin: 0 auto;
-            width: $width7;
+            margin: 2rem auto;
+            width: $width9;
             display: block;
             align-self: flex-start;
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  body {
+    .h3-section {
+      width: $width9;
+    }
+
+    .title-highlight {
+      width: 95%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .h4-section {
+      width: $width9;
+    }
+
+    main {
+      #project4 {
+        margin: 1rem auto;
+        gap: 0;
+        img {
+          display: none;
+        }
+        div {
+          display: inline-block;
+          width: $width9;
+          margin: 0 auto;
+          text-align: center;
+          img {
+            display: inline-block;
+            margin: 0;
+            vertical-align: text-bottom;
+          }
+          h1 {
+            display: inline-block;
+            margin: 0 auto;
+            width: max-content;
+            text-align: justify;
+            font-size: $h4size;
+          }
+          h2 {
+            margin: 0 auto;
+            width: max-content;
+            text-align: justify;
+            font-size: $h4size;
+          }
+        }
+      }
+
+      #info {
+        #summary {
+          flex-direction: column-reverse;
+          width: $width9;
+          section {
+            width: $width !important;
+          }
+        }
+      }
+
+      #prototype {
+        #hifi {
+          display: flex;
+          justify-content: start;
+          flex-wrap: nowrap;
+          margin-right: 0;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          overflow-x: scroll;
+          width: 325px;
+          img {
+            scroll-snap-align: start;
+            padding: 0.5rem;
+            width: 75%;
+          }
+        }
+
+        #new_features {
+          width: $width9;
+          section {
+            font-size: $h4size;
+            width: $width;
+            gap: 0;
+            flex-direction: column-reverse !important;
+            margin: 0;
+            margin-top: 2rem;
+            img {
+              max-width: inherit;
+              margin-bottom: 0.5rem;
+            }
+            p {
+              width: inherit;
+            }
+          }
+        }
+      }
+
+      #design {
+        img {
+          width: $width9;
+          margin: 1rem auto;
+        }
+        #brainstorm {
+          img {
+            width: $width9;
+          }
+        }
+        
+        #design_points {
+          flex-direction: column;
+          width: $width9;
+        }
+      }
+
+      #define {
+        #analysis {
+          flex-direction: row;
+          justify-content: start;
+          flex-wrap: nowrap;
+          margin-right: 0;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          overflow-x: scroll;
+          width: $width9;
+          div {
+            justify-content: initial;
+            width: max-content;
+            img {
+              scroll-snap-align: start;
+              width: 300px;
+            }
+          }
+        }
+
+        #persona {
+          img {
+            width: $width9;
+          }
+          #userFlow {
+            width: $width9;
+            img {
+              width: $width;
+            }
+            .top-box {
+              color: #249BED;
+              h3 {
+                background-color: $background;
+                margin: 0;
+                padding: 0;
+                width: 30%;
+                align-self: flex-start;
+              }
+              p {
+                border: 0px solid !important;
+                width: $width;
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }
